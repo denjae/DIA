@@ -23,7 +23,6 @@ public class PubSub {
         connection.connect();
         connection.login(user, pass);
     }
-    //TODO delete erstellen
 
     //Verbindung trennen
     public void disconnect() {
@@ -83,7 +82,6 @@ public class PubSub {
         return items;
     }
 
-    //TODO Pub-Methoden ueberschreiben vorherige Nodes, ueberarbeiten!
     //Publiziert Kommentar
     public void pubComment(String team, int min, String comment) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(team);
@@ -93,20 +91,4 @@ public class PubSub {
         System.out.println("Kommentar erzeugt.");
     }
 
-    //Publiziert ein Tor und korrigiert manuell das aktuelle Ergebnis
-    public void pubGoal(String team, String schuetze, int min, String ergebnis) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(team);
-        SimplePayload payload = new SimplePayload("Liveticker", null, "<Endergebnis><Ergebnis>" + ergebnis + "</Ergebnis><Tore><Tor><Torschuetze>" + schuetze + "</Torschuetze><Mannschaft_Schuetze>" + team + "</Mannschaft_Schuetze><Minute>" + min + "</Minute></Tor></Tore></Endergebnis>");
-        PayloadItem item = new PayloadItem<SimplePayload>(team, payload);
-        node.publish(item);
-    }
-
-    //Entfernt letzte Publikation
-    public void deleteMessage(String Id, String team) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(team);
-        node.deleteItem(Id);
-        System.out.println("Item entfernt");
-        System.out.println("");
-
-    }
 }
