@@ -45,29 +45,6 @@ public class PubSub {
         node.unsubscribe(connection.getUser());
     }
 
-    //Gibt alle Abonnenten aus
-    public void getAllSubscriptions() throws XMPPException {
-        List<Subscription> subscriptions = mgr.getSubscriptions();
-        System.out.println("Abonennten aller Nodes:");
-        System.out.println(subscriptions.toString());
-        System.out.println("");
-
-    }
-
-    //Gibt alle Topics (Nodes) zurueck
-    public List<String> discover() throws XMPPException {
-        this.sdMgr = ServiceDiscoveryManager.getInstanceFor(connection);
-        List<String> list = new ArrayList<String>();
-        for (Iterator<DiscoverItems.Item> iterator = sdMgr.discoverItems("pubsub." + "localhost").getItems(); iterator.hasNext(); ) {
-            DiscoverItems.Item item = iterator.next();
-            list.add(item.getNode());
-        }
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
-        return list;
-    }
-
     //Gibt die publizierten Nachrichten des ausgewaehlten Knoten zurueck
     public Collection getMessagesFromNode(String team) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(team);

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/diaService/blutzucker.xml" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/PublishService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xsd" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../DIA.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/HelloWorld.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xmpp/PubSub.java" afterPath="$PROJECT_DIR$/src/main/java/xmpp/PubSub.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pom.xml" afterPath="$PROJECT_DIR$/../pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
@@ -78,14 +85,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PubSub.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PubSub.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/xmpp/PubSub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="32" selection-start="880" selection-end="880" vertical-scroll-proportion="0.57771665" vertical-offset="0" max-vertical-offset="1485">
+            <state line="45" column="5" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1140">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2020#2028#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublishService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/PublishService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="30" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +108,16 @@
       <file leaf-file-name="blutzucker.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="3" column="12" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blutzucker.xsd" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="44" selection-start="477" selection-end="477" vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="740">
               <folding />
             </state>
           </provider>
@@ -115,6 +139,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Push.Settings">
+    <option name="myUpdateMethod" value="REBASE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -124,6 +151,8 @@
         <option value="$PROJECT_DIR$/src/main/java/xmpp/ItemEventCoordinator.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/xmpp/PubSub.java" />
+        <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xsd" />
       </list>
     </option>
   </component>
@@ -147,7 +176,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -446,12 +475,16 @@
       <created>1386609130648</created>
       <updated>1386609130648</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="kleinere anpassungen vorgenommen">
+      <created>1386614114493</created>
+      <updated>1386614114493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="22" width="1420" height="837" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -469,7 +502,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -492,7 +525,8 @@
     </option>
     <MESSAGE value="datenbank fehlerhaft&#10;" />
     <MESSAGE value="start xmpp&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="start xmpp&#10;" />
+    <MESSAGE value="kleinere anpassungen vorgenommen" />
+    <option name="LAST_COMMIT_MESSAGE" value="kleinere anpassungen vorgenommen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -510,7 +544,6 @@
         <state line="74" column="48" selection-start="2681" selection-end="2681" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1755">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2020#2028#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,20 +576,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xmpp/PubSub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="740">
+        <state line="45" column="5" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1140">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/PublishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xmpp/PubSub.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="32" selection-start="880" selection-end="880" vertical-scroll-proportion="0.57771665" vertical-offset="0" max-vertical-offset="1485">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2020#2028#0" expanded="true" />
-          </folding>
+        <state line="3" column="12" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="44" selection-start="477" selection-end="477" vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="740">
+          <folding />
         </state>
       </provider>
     </entry>
