@@ -1,5 +1,10 @@
-<BZeintrag>
-    <Blutucker> </Blutucker>
-    <Uhrzeit> </Uhrzeit>
-    <Datum> </Datum>
-</BZeintrag>
+<?xml version="1.0"?>
+
+<BZ>
+    <Name></Name>
+    <BZeintrag>
+        <Blutucker></Blutucker>
+        <Uhrzeit></Uhrzeit>
+        <Datum></Datum>
+    </BZeintrag>
+</BZ>
