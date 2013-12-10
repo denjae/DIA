@@ -1,5 +1,6 @@
 package xmpp;
 
+import org.jivesoftware.smack.AccountManager;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.packet.RosterPacket;
@@ -14,10 +15,21 @@ public class PubSub {
     private PubSubManager mgr = new PubSubManager(connection);
     private ServiceDiscoveryManager sdMgr;
 
-
     public PubSub(String user, String pass) throws XMPPException {
         connection.connect();
         connection.login(user, pass);
+    }
+
+    public XMPPConnection getConnection() {
+        return this.connection;
+    }
+    public void createUser(String vname, String nname, String user, String password){
+        AccountManager accountManager = new AccountManager(connection);
+        try {
+            accountManager.createAccount(user, password);
+        } catch (XMPPException e) {
+            e.printStackTrace();
+        }
     }
 
     //Verbindung trennen
