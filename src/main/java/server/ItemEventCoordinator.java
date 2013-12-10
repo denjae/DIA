@@ -1,4 +1,4 @@
-package xmpp;
+package server;
 
 import org.jivesoftware.smackx.pubsub.ItemPublishEvent;
 import org.jivesoftware.smackx.pubsub.listener.ItemEventListener;

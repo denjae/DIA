@@ -13,12 +13,12 @@ import java.io.File;
  */
 public class DiabeticService {
 
-    public DiabeticService(String name) {
+    public DiabeticService() {
         File bzPatient = null;
     }
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
-    public File getBZ(String Name) throws ParserConfigurationException {
+    public File getBZ() throws ParserConfigurationException {
 
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
