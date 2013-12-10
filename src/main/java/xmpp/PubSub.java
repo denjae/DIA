@@ -4,14 +4,10 @@ import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.packet.RosterPacket;
 import org.jivesoftware.smackx.ServiceDiscoveryManager;
-import org.jivesoftware.smackx.packet.DiscoverItems;
 import org.jivesoftware.smackx.pubsub.*;
 import org.xmpp.packet.Roster;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
 
 public class PubSub {
     private XMPPConnection connection = new XMPPConnection("localhost");
@@ -46,9 +42,9 @@ public class PubSub {
     }
 
     //Gibt die publizierten Nachrichten des ausgewaehlten Knoten zurueck
-    public Collection getMessagesFromNode(String team) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(team);
-        Collection<? extends RosterPacket.Item> items = node.getItems();
+    public Collection getMessagesFromNode(String bz) throws XMPPException {
+        LeafNode node = (LeafNode) mgr.getNode(bz);
+        Collection<? extends Item> items = node.getItems();
 
        /* System.out.println("Alle Messages von " + team + ":");
         for (int i = 0; i < node.getItems().size(); i++) {
