@@ -3,8 +3,44 @@
 <BZ>
     <Name></Name>
     <BZeintrag>
-        <Blutucker></Blutucker>
-        <Uhrzeit></Uhrzeit>
-        <Datum></Datum>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
+    </BZeintrag>
+
+    <BZeintrag>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
+    </BZeintrag>
+
+    <BZeintrag>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
+    </BZeintrag>
+
+    <BZeintrag>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
+    </BZeintrag>
+
+    <BZeintrag>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
+    </BZeintrag>
+
+    <BZeintrag>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
+    </BZeintrag>
+
+    <BZeintrag>
+        <Blutucker>111</Blutucker>
+        <Uhrzeit>11:11</Uhrzeit>
+        <Datum>11.11.2011</Datum>
     </BZeintrag>
 </BZ>
