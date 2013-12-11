@@ -31,7 +31,15 @@ public class DiabeticService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        // Root Element
         Document document = docBuilder.newDocument();
+        Element rootElement = document.createElement("BZ");
+        document.appendChild(rootElement);
+
+        // Element Name
+        Element name = document.createElement("Name");
+        rootElement.appendChild(name);
+
         //Ermitteln von max 20 Knoten
         NodeList list = document.getElementsByTagName("BZeintrag");
         int length = 0;
@@ -41,9 +49,27 @@ public class DiabeticService {
             else {
                 length= 20;
             }
+        //Neues XML-Dokument mit den max. 20 letzten Werten
+        // Root Element
+        for (int i = 0; i < length; i++) {
+            // Element Eintrag
+            Element entry = document.createElement("BZeintrag");
+            rootElement.appendChild(entry);
+            for (int j = 0; j < 3; j++) {
+                // Element Blutzucker
+                Element bz = document.createElement("Blutzucker");
+                entry.appendChild(bz);
 
-
-
+                // Element Uhrzeit
+                Element time = document.createElement("Uhrzeit");
+                entry.appendChild(time);
+                 //TODO: XML in Schleife an richtige Stelle schreiben
+                // Element Datum
+                Element nickname = document.createElement("Datum");
+                entry.appendChild(nickname);
+            list.item(i).getChildNodes().item(j).getFirstChild().getNodeValue();
+            }
+        }
 
 
         File currentBZ = null;

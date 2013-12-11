@@ -33,43 +33,27 @@ public class XmlService {
             Element name = document.createElement("Name");
             rootElement.appendChild(name);
 
-            // Element Name
+            // Element Eintrag
             Element entry = document.createElement("BZeintrag");
             rootElement.appendChild(entry);
 
-            // set attribute to staff element
-            // Attr attr = document.createAttribute("id");
-            //attr.setValue("1");
-            // name.setAttributeNode(attr);
-
-            // shorten way
-            // staff.setAttribute("id", "1");
-
             // Element Blutzucker
             Element bz = document.createElement("Blutzucker");
-            // bz.appendChild(document.createTextNode("yong"));
             entry.appendChild(bz);
 
             // Element Uhrzeit
-            Element time = document.createElement("lastname");
-            //lastname.appendChild(document.createTextNode("mook kim"));
+            Element time = document.createElement("Uhrzeit");
             entry.appendChild(time);
 
             // Element Datum
-            Element nickname = document.createElement("nickname");
-            // nickname.appendChild(document.createTextNode("mkyong"));
+            Element nickname = document.createElement("Datum");
             entry.appendChild(nickname);
 
-
-            // write the content into xml file
+            // Inhalt in XML speichern
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(document);
             StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml"));
-
-            // Output to console for testing
-            // StreamResult result = new StreamResult(System.out);
-
             transformer.transform(source, result);
 
             System.out.println("File saved!");
