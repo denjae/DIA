@@ -16,9 +16,6 @@ import java.io.IOException;
  */
 public class DiabeticService {
 
-    public DiabeticService() {
-        File bzPatient = null;
-    }
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
     public File getBZ(String user) throws ParserConfigurationException {
