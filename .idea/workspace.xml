@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/test.xml" afterPath="$PROJECT_DIR$/src/main/resources/test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
@@ -68,33 +70,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PubSub.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/PubSub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="33" selection-start="1284" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1110">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiabeticService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ItemEventCoordinator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/ItemEventCoordinator.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,7 +91,7 @@
       <file leaf-file-name="XmlService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="140" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.12715517" vertical-offset="376" max-vertical-offset="840">
+            <state line="69" column="115" selection-start="2552" selection-end="2552" vertical-scroll-proportion="1.7084188" vertical-offset="203" max-vertical-offset="1350">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,19 +99,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlServiceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
+      <file leaf-file-name="blutzucker.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="8" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blutzucker.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml">
+      <file leaf-file-name="XmlServiceTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="50" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+            <state line="11" column="35" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -162,13 +137,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xsd" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/PublishService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
         <option value="$PROJECT_DIR$/src/main/java/xmpp/PubSub.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaSubscriber/CreateUserFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/CreateUserFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/CreateXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
         <option value="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
       </list>
@@ -392,6 +367,23 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="XmlService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="server.XmlService" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DIA" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -522,12 +514,14 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.XmlServiceTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.XmlService" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.XmlServiceTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.XmlService" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -583,7 +577,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -799,21 +793,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="50" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="8" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="11" column="35" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="140" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.12715517" vertical-offset="376" max-vertical-offset="840">
+        <state line="69" column="115" selection-start="2552" selection-end="2552" vertical-scroll-proportion="1.7084188" vertical-offset="203" max-vertical-offset="1350">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

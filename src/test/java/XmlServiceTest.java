@@ -9,7 +9,7 @@ public class XmlServiceTest {
 
     XmlService test = new XmlService();
         try {
-            test.createFile();
+            test.createFile("Denjae");
         } catch (Exception e) {
             e.printStackTrace();
         }
