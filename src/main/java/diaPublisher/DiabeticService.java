@@ -18,17 +18,14 @@ public class DiabeticService {
     }
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
-    public File getBZ() throws ParserConfigurationException {
-
+    public File getBZ(String user) throws ParserConfigurationException {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-
-
         Document document = docBuilder.newDocument();
         Element rootElement = document.createElement("BZ");
 
         File currentBZ = null;
-
+        File patbz = new File("\"/Users/denjae/git/DIA/src/main/resources/"+ user +".xml");
         return currentBZ;
     }
 

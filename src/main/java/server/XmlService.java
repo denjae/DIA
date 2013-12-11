@@ -1,6 +1,5 @@
 package server;
 
-import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -18,7 +17,6 @@ import java.io.File;
  * Created by denjae on 10.12.13.
  */
 public class XmlService {
-     //TODO: Überlegen wie sinnvoll ein Name erzeugt wird
     public void createFile(String user) {
 
         try {
@@ -40,16 +38,16 @@ public class XmlService {
             rootElement.appendChild(entry);
 
             // set attribute to staff element
-           // Attr attr = document.createAttribute("id");
+            // Attr attr = document.createAttribute("id");
             //attr.setValue("1");
-           // name.setAttributeNode(attr);
+            // name.setAttributeNode(attr);
 
             // shorten way
             // staff.setAttribute("id", "1");
 
             // Element Blutzucker
             Element bz = document.createElement("Blutzucker");
-           // bz.appendChild(document.createTextNode("yong"));
+            // bz.appendChild(document.createTextNode("yong"));
             entry.appendChild(bz);
 
             // Element Uhrzeit
@@ -59,7 +57,7 @@ public class XmlService {
 
             // Element Datum
             Element nickname = document.createElement("nickname");
-           // nickname.appendChild(document.createTextNode("mkyong"));
+            // nickname.appendChild(document.createTextNode("mkyong"));
             entry.appendChild(nickname);
 
 
@@ -67,7 +65,7 @@ public class XmlService {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/"+user+".xml"));
+            StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml"));
 
             // Output to console for testing
             // StreamResult result = new StreamResult(System.out);
