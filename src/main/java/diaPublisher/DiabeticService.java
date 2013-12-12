@@ -24,18 +24,13 @@ public class DiabeticService {
 
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
-    public void getBZ(String user) throws ParserConfigurationException, TransformerException {
+    public void getBZ(String user) throws Exception {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-        try {
-            docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/"+ user +".xml");
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
         // Root Element
-        Document document = docBuilder.newDocument();
+        Document document = null;
+        document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
         Element rootElement = document.createElement("BZ");
         document.appendChild(rootElement);
 
@@ -74,6 +69,7 @@ public class DiabeticService {
                 date.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
                 entry.appendChild(date);
             }
+        }
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = null;
             try {
@@ -84,7 +80,7 @@ public class DiabeticService {
             DOMSource source = new DOMSource(document);
             StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
             transformer.transform(source, result);
-        }
+
     }
 
     public void setBZ(String name) {

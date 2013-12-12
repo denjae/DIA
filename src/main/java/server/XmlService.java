@@ -23,9 +23,9 @@ public class XmlService {
 
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+            Document document = docBuilder.newDocument();
 
             // Root Element
-            Document document = docBuilder.newDocument();
             Element rootElement = document.createElement("BZ");
             document.appendChild(rootElement);
 
