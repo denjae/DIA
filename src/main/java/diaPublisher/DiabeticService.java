@@ -24,13 +24,20 @@ public class DiabeticService {
 
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
-    public void getBZ(String user) throws Exception {
+    public void getBZ(String user)  {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        }
 
         // Root Element
         Document document = null;
-        document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
+        try {
+            document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
+
         Element rootElement = document.createElement("BZ");
         document.appendChild(rootElement);
 
@@ -70,21 +77,29 @@ public class DiabeticService {
                 entry.appendChild(date);
             }
         }
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = null;
-            try {
-                transformer = transformerFactory.newTransformer();
-            } catch (TransformerConfigurationException e) {
-                e.printStackTrace();
-            }
-            DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
-            transformer.transform(source, result);
+        // Inhalt in XML speichern
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        DOMSource source = new DOMSource(document);
+        StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
+        transformer.transform(source, result);
+
+        System.out.println("File saved!");
+        transformer.transform(source, result);
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TransformerConfigurationException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
 
     }
 
-    public void setBZ(String name) {
 
+    public void setBZ(String name) {
     }
 
 }
