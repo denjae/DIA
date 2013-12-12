@@ -8,6 +8,12 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
 
@@ -18,7 +24,7 @@ public class DiabeticService {
 
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
-    public File getBZ(String user) throws ParserConfigurationException {
+    public void getBZ(String user) throws ParserConfigurationException, TransformerException {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
         try {
@@ -55,25 +61,30 @@ public class DiabeticService {
             for (int j = 0; j < 3; j++) {
                 // Element Blutzucker
                 Element bz = document.createElement("Blutzucker");
+                bz.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
                 entry.appendChild(bz);
 
                 // Element Uhrzeit
                 Element time = document.createElement("Uhrzeit");
+                time.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
                 entry.appendChild(time);
-                 //TODO: XML in Schleife an richtige Stelle schreiben
+
                 // Element Datum
-                Element nickname = document.createElement("Datum");
-                entry.appendChild(nickname);
-            list.item(i).getChildNodes().item(j).getFirstChild().getNodeValue();
+                Element date = document.createElement("Datum");
+                date.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
+                entry.appendChild(date);
             }
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = null;
+            try {
+                transformer = transformerFactory.newTransformer();
+            } catch (TransformerConfigurationException e) {
+                e.printStackTrace();
+            }
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
+            transformer.transform(source, result);
         }
-
-
-        File currentBZ = null;
-
-
-
-        return currentBZ;
     }
 
     public void setBZ(String name) {

@@ -31,6 +31,7 @@ public class XmlService {
 
             // Element Name
             Element name = document.createElement("Name");
+            name.appendChild(document.createTextNode("Denjae"));
             rootElement.appendChild(name);
 
             // Element Eintrag
@@ -39,15 +40,18 @@ public class XmlService {
 
             // Element Blutzucker
             Element bz = document.createElement("Blutzucker");
+            bz.appendChild(document.createTextNode("111"));
             entry.appendChild(bz);
 
             // Element Uhrzeit
             Element time = document.createElement("Uhrzeit");
+            time.appendChild(document.createTextNode("11:11"));
             entry.appendChild(time);
 
             // Element Datum
-            Element nickname = document.createElement("Datum");
-            entry.appendChild(nickname);
+            Element date = document.createElement("Datum");
+            date.appendChild(document.createTextNode("11.11.2011"));
+            entry.appendChild(date);
 
             // Inhalt in XML speichern
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
