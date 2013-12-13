@@ -2,6 +2,7 @@ package diaPublisher;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -29,14 +30,18 @@ public class DiabeticService {
         DocumentBuilder docBuilder = null;
         try {
             docBuilder = docFactory.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
 
-        // Root Element
-        try {
            Document document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
-           Document lastValues = null;
+           Document lastValues = docBuilder.newDocument();
+
+            // Root Element
+            Element rootElement = lastValues.createElement("BZ");
+            lastValues.appendChild(rootElement);
+
+            //Element Name
+            Element name = lastValues.createElement("Name");
+            name.appendChild(lastValues.createTextNode(user));
+            rootElement.appendChild(name);
 
 
         //Neues XML-Dokument mit den max. 20 letzten Werten
@@ -49,6 +54,15 @@ public class DiabeticService {
             else {
                 length= 20;
             }
+
+            for (int i = 0; i < length ; i++) {
+                // Element Eintrag
+              // Element entry = lastValues.createElement("BZeintrag");
+              //rootElement.appendChild(entry);
+              Node node = lastValues.importNode(document.getDocumentElement(),true);
+              lastValues.getDocumentElement().appendChild(node);
+                System.out.println(1);
+             }
 
 
 
@@ -68,6 +82,8 @@ public class DiabeticService {
         } catch (TransformerConfigurationException e) {
             e.printStackTrace();
         } catch (TransformerException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
             e.printStackTrace();
         }
 
