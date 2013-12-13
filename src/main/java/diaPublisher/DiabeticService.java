@@ -38,13 +38,12 @@ public class DiabeticService {
         try {
             document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
 
-        Element rootElement = document.createElement("BZ");
-        document.appendChild(rootElement);
+            Element rootElement = document.createElement("BZ");
+            document.appendChild(rootElement);
 
-        // Element Name
-        Element name = document.createElement("Name");
-        rootElement.appendChild(name);
-
+            // Element Name
+            Element name = document.createElement("Name");
+            rootElement.appendChild(name);
         //Ermitteln von max 20 Knoten
         NodeList list = document.getElementsByTagName("BZeintrag");
         int length = 0;
@@ -54,13 +53,15 @@ public class DiabeticService {
             else {
                 length= 20;
             }
+            System.out.println(length);
+
         //Neues XML-Dokument mit den max. 20 letzten Werten
         // Root Element
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length-1; i++) {
             // Element Eintrag
             Element entry = document.createElement("BZeintrag");
             rootElement.appendChild(entry);
-            for (int j = 0; j < 3; j++) {
+          /*  for (int j = 0; j < 3; j++) {
                 // Element Blutzucker
                 Element bz = document.createElement("Blutzucker");
                 bz.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
@@ -75,7 +76,7 @@ public class DiabeticService {
                 Element date = document.createElement("Datum");
                 date.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
                 entry.appendChild(date);
-            }
+            }*/
         }
         // Inhalt in XML speichern
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
