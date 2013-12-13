@@ -31,7 +31,7 @@ public class XmlService {
 
             // Element Name
             Element name = document.createElement("Name");
-            name.appendChild(document.createTextNode("Denjae"));
+            name.appendChild(document.createTextNode(user));
             rootElement.appendChild(name);
 
             // Element Eintrag

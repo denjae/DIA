@@ -34,54 +34,28 @@ public class DiabeticService {
         }
 
         // Root Element
-        Document document = null;
         try {
-            document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
+           Document document = docBuilder.parse("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
+           Document lastValues = null;
 
-            Element rootElement = document.createElement("BZ");
-            document.appendChild(rootElement);
 
-            // Element Name
-            Element name = document.createElement("Name");
-            rootElement.appendChild(name);
-        //Ermitteln von max 20 Knoten
-        NodeList list = document.getElementsByTagName("BZeintrag");
-        int length = 0;
+        //Neues XML-Dokument mit den max. 20 letzten Werten
+            //Ermitteln von max 20 Knoten
+            NodeList list = document.getElementsByTagName("BZeintrag");
+            int length = 0;
             if(list.getLength()<20) {
-        length = list.getLength();
+                length = list.getLength();
             }
             else {
                 length= 20;
             }
-            System.out.println(length);
 
-        //Neues XML-Dokument mit den max. 20 letzten Werten
-        // Root Element
-        for (int i = 0; i < length-1; i++) {
-            // Element Eintrag
-            Element entry = document.createElement("BZeintrag");
-            rootElement.appendChild(entry);
-          /*  for (int j = 0; j < 3; j++) {
-                // Element Blutzucker
-                Element bz = document.createElement("Blutzucker");
-                bz.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
-                entry.appendChild(bz);
 
-                // Element Uhrzeit
-                Element time = document.createElement("Uhrzeit");
-                time.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
-                entry.appendChild(time);
 
-                // Element Datum
-                Element date = document.createElement("Datum");
-                date.appendChild(document.createTextNode(list.item(i).getChildNodes().item(j).getNodeValue()));
-                entry.appendChild(date);
-            }*/
-        }
         // Inhalt in XML speichern
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
-        DOMSource source = new DOMSource(document);
+        DOMSource source = new DOMSource(lastValues);
         StreamResult result = new StreamResult(new File("/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
         transformer.transform(source, result);
 
