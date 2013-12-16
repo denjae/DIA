@@ -4,8 +4,11 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
@@ -83,9 +86,9 @@ public class DiabeticService {
         try {
             Document document = (Document) builder.build(xmlFile);
             Document lastEntries = new Document();
-            Element rootNode= document.getRootElement();
+            Element rootNode = document.getRootElement();
             Element BZ = new Element("BZ");
-            document.setRootElement(BZ);
+            lastEntries.setRootElement(BZ);
             List list = rootNode.getChildren("BZeintrag");
 
             //Begrenzt Ergebnis auf die max 20 letzten Werte
@@ -96,16 +99,24 @@ public class DiabeticService {
                 length = 20;
             }
 
+
             for (int i = 0; i < length; i++) {
-
+                Element bzEntry = new Element("BZeintrag");
                 Element node = (Element) list.get(i);
-
-                System.out.println("Blutzucker : " + node.getChildText("Blutzucker"));
-                System.out.println("Uhrzeit : " + node.getChildText("Uhrzeit"));
-                System.out.println("Datum : " + node.getChildText("Datum"));
-
-
+                bzEntry.addContent(new Element("Blutzucker").setText(node.getChildText("Blutzucker")));
+                bzEntry.addContent(new Element("Uhrzeit").setText(node.getChildText("Uhrzeit")));
+                bzEntry.addContent(new Element("Datum").setText(node.getChildText("Datum")));
+                lastEntries.getRootElement().addContent(bzEntry);
             }
+
+            // new XMLOutputter().output(doc, System.out);
+            XMLOutputter xmlOutput = new XMLOutputter();
+
+            // display nice nice
+            xmlOutput.setFormat(Format.getPrettyFormat());
+            xmlOutput.output(lastEntries, new FileWriter( "/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
+
+            System.out.println("File Saved!");
 
         } catch (IOException io) {
             System.out.println(io.getMessage());
@@ -113,8 +124,6 @@ public class DiabeticService {
             System.out.println(jdomex.getMessage());
         }
     }
-
-
 
 
     public void setBZ(String name) {
