@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Denjae.xml" afterPath="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/returnBz.xml" afterPath="$PROJECT_DIR$/src/main/resources/returnBz.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +70,7 @@
       <file leaf-file-name="DiabeticService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="95" selection-start="4828" selection-end="4828" vertical-scroll-proportion="0.05102041" vertical-offset="1895" max-vertical-offset="2385">
+            <state line="80" column="71" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.29591838" vertical-offset="1055" max-vertical-offset="2385">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1050,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="95" selection-start="4828" selection-end="4828" vertical-scroll-proportion="0.05102041" vertical-offset="1895" max-vertical-offset="2385">
+        <state line="80" column="71" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.29591838" vertical-offset="1055" max-vertical-offset="2385">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

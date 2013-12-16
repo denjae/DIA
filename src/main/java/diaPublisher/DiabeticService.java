@@ -78,7 +78,7 @@ public class DiabeticService {
         }
 
     }*/
-
+     //TODO: Letzte Werte von unten auslesen, nicht von oben! ANPASSEN!
     public void getBZ(String user) throws JDOMException, IOException {
         SAXBuilder builder = new SAXBuilder();
         File xmlFile = new File("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
