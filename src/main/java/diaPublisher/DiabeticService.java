@@ -114,9 +114,7 @@ public class DiabeticService {
 
             // display nice nice
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(lastEntries, new FileWriter( "/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
-
-            System.out.println("File Saved!");
+            xmlOutput.output(lastEntries, new FileWriter("/Users/denjae/git/DIA/src/main/resources/returnBz.xml"));
 
         } catch (IOException io) {
             System.out.println(io.getMessage());
@@ -126,7 +124,30 @@ public class DiabeticService {
     }
 
 
-    public void setBZ(String name) {
+    public void setBZ(String user,Integer bz, String date, String time) {
+        SAXBuilder builder = new SAXBuilder();
+        File xmlFile = new File("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml");
+        try {
+            Document document = (Document) builder.build(xmlFile);
+            Element rootElement = document.getRootElement();
+            Element bzEntry = new Element("BZeintrag");
+            Element actbz = bzEntry.addContent(new Element("Blutzucker").setText(bz.toString()));
+            Element acttime = bzEntry.addContent(new Element("Uhrzeit").setText(time));
+            Element actdate = bzEntry.addContent(new Element("Datum").setText(date));
+            rootElement.addContent(bzEntry);
+
+            XMLOutputter xmlOutput = new XMLOutputter();
+
+            // display nice nice
+            xmlOutput.setFormat(Format.getPrettyFormat());
+            xmlOutput.output(document, new FileWriter("/Users/denjae/git/DIA/src/main/resources/" + user + ".xml"));
+
+
+        } catch (JDOMException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
