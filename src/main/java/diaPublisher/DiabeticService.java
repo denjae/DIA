@@ -25,7 +25,7 @@ public class DiabeticService {
 
 
     // Erstellt XML mit den maximal 20 zuletzt eingetragenen Werten und gibt diese zurück
-    public void getBZ(String user)  {
+  /*  public void getBZ(String user)  {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = null;
         try {
@@ -86,6 +86,13 @@ public class DiabeticService {
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         }
+
+    }
+
+    */
+
+    public void getBZ(String user){
+
 
     }
 
