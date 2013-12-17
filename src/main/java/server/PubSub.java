@@ -21,10 +21,19 @@ public class PubSub {
     }
 
     public XMPPConnection getConnection() {
+
+
+
+
+
+
         return this.connection;
     }
-    public void createUser(String vname, String nname, String user, String password){
+
+    public void createUser(String user, String password) {
         AccountManager accountManager = new AccountManager(connection);
+        XmlService xmlService = new XmlService();
+        xmlService.createFile(user);
         try {
             accountManager.createAccount(user, password);
         } catch (XMPPException e) {
@@ -75,7 +84,6 @@ public class PubSub {
         node.publish(item);
         System.out.println("Kommentar erzeugt.");
     }
-
 
 
 }
