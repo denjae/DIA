@@ -16,9 +16,14 @@ public class PubSub {
     private ServiceDiscoveryManager sdMgr;
 
     public PubSub(String user, String pass) throws XMPPException {
-        connection.connect();
-        connection.login(user, pass);
-    }
+        try {
+            connection.connect();
+            connection.login(user, pass);
+        } catch (XMPPException e) {
+            System.err.println("Login failed!");
+            e.printStackTrace();
+            System.exit(1);
+        }}
 
     public XMPPConnection getConnection() {
 
