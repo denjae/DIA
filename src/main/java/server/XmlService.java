@@ -8,6 +8,7 @@ import org.jdom2.input.SAXBuilder;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -42,11 +43,16 @@ public class XmlService {
 
 
     }
-
+    //Berechnet den Durchschnitt der letzten 20 eingetragenen BZ-Werte
     public int getAverage(String user) throws JDOMException, IOException {
+        //Definition des Tolleranzbereiches
+        int maxBz = 160;
+        int minBz = 70;
         int average = 0;
         DiabeticService service = new DiabeticService();
         service.getBZ(user);
+
+        //Erstellt XML mit den letzten 20 BZ-Werten
         File xmlFile = new File("/Users/denjae/git/DIA/src/main/resources/returnBz.xml");
         SAXBuilder builder = new SAXBuilder();
         Document document = null;
@@ -55,6 +61,7 @@ public class XmlService {
             Element rootNode = document.getRootElement();
             List list = rootNode.getChildren("BZeintrag");
 
+            //Durchschnittsberechnung
             for (int i = 0; i < list.size(); i++) {
 
                 Element node = (Element) list.get(i);
@@ -68,7 +75,8 @@ public class XmlService {
             e.printStackTrace();
         }
 
-
+        if(average > maxBz || average < minBz)
+            JOptionPane.showMessageDialog(null, "Blutzucker von "+user+ " ausserhalb der Tolleranz - Kontrolle notwendig");
         return average;
     }
 }
