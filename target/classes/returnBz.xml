@@ -1,91 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BZ>
-  <Name>Denjae</Name>
-  <BZeintrag>
-    <Blutzucker>111</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>2</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>3</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>4</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>5</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>6</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>7</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>8</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>9</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>10</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>11</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>12</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>13</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>14</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>15</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>16</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
-  <BZeintrag>
-    <Blutzucker>17</Blutzucker>
-    <Uhrzeit>11:11</Uhrzeit>
-    <Datum>11.11.2011</Datum>
-  </BZeintrag>
   <BZeintrag>
     <Blutzucker>18</Blutzucker>
     <Uhrzeit>11:11</Uhrzeit>
@@ -175,6 +89,11 @@
     <Blutzucker>34</Blutzucker>
     <Uhrzeit>11:11</Uhrzeit>
     <Datum>11.11.2011</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>122</Blutzucker>
+    <Uhrzeit>12:12</Uhrzeit>
+    <Datum>12.12.2012</Datum>
   </BZeintrag>
   <BZeintrag>
     <Blutzucker>122</Blutzucker>

@@ -11,12 +11,12 @@ import java.io.IOException;
 public class DiabeticServiceTest {
     public static void main(String[] args) throws Exception {
         DiabeticService diabeticService = new DiabeticService();
-       /* try {
+        try {
             diabeticService.getBZ("Denjae");
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
-        diabeticService.setBZ("Denjae",122, "12.12.2012", "12:12");
+        }
+       // diabeticService.setBZ("Denjae",122, "12.12.2012", "12:12");
     }
 
 
