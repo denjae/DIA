@@ -55,7 +55,7 @@ public class DiabeticService {
             // new XMLOutputter().output(doc, System.out);
             XMLOutputter xmlOutput = new XMLOutputter();
 
-            // display nice nice
+            // Ausgabe formatieren
             xmlOutput.setFormat(Format.getPrettyFormat());
             xmlOutput.output(lastEntries, new FileWriter("./src/main/resources//returnBz.xml"));
 

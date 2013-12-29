@@ -71,21 +71,14 @@ public class PubSub {
     public Collection getMessagesFromNode(String bz) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(bz);
         Collection<? extends Item> items = node.getItems();
-
-       /* System.out.println("Alle Messages von " + team + ":");
-        for (int i = 0; i < node.getItems().size(); i++) {
-            System.out.println(node.getItems(node.getSubscriptions().get(0).getId()).get(i));
-        }
-        System.out.println("");*/
-
         return items;
     }
 
     //Publiziert Kommentar
-    public void pubComment(String team, int min, String comment) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(team);
-        SimplePayload payload = new SimplePayload("Liveticker", null, "<Spiel><Kommentare><Kommentar><Minute>" + min + "</Minute><Text>" + comment + "</Text></Kommentar></Kommentare></Spiel>");
-        PayloadItem item = new PayloadItem<SimplePayload>(team, payload);
+    public void sendBZ(int bz, String name, String time, String date) throws XMPPException {
+        LeafNode node = (LeafNode) mgr.getNode(name);
+        SimplePayload payload = new SimplePayload("Liveticker", null, " <BZeintrag><Blutzucker>"+ bz+ "</Blutzucker><Uhrzeit>" +time+ "</Uhrzeit><Datum>" +date+ "</Datum></BZeintrag>");
+        PayloadItem item = new PayloadItem<SimplePayload>(name, payload);
         node.publish(item);
         System.out.println("Kommentar erzeugt.");
     }
