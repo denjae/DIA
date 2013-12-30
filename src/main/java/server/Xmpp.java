@@ -1,6 +1,7 @@
 package server;
 
 import org.jivesoftware.smack.AccountManager;
+import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.packet.RosterPacket;
@@ -10,15 +11,16 @@ import org.xmpp.packet.Roster;
 
 import java.util.Collection;
 
-public class PubSub {
-    private XMPPConnection connection = new XMPPConnection("localhost");
-    private PubSubManager mgr = new PubSubManager(connection);
-    private ServiceDiscoveryManager sdMgr;
+public class Xmpp {
+    ConnectionConfiguration config = new ConnectionConfiguration("127.0.0.1", 5222,"localhost");
+    private XMPPConnection connection = new XMPPConnection(config);
+    private PubSubManager mgr;
 
-    public PubSub(String user, String pass) throws XMPPException {
+    public void login(String user, String pass) throws XMPPException {
         try {
             connection.connect();
             connection.login(user, pass);
+             mgr = new PubSubManager(connection);
         } catch (XMPPException e) {
             System.err.println("Login failed!");
             e.printStackTrace();
@@ -51,6 +53,21 @@ public class PubSub {
         node.addItemEventListener(new ItemEventCoordinator<RosterPacket.Item>());
         node.subscribe(connection.getUser());
 
+    }
+
+    public void createNode(String user){
+        try {
+            LeafNode node = mgr.createNode(user);
+            ConfigureForm form1 = new ConfigureForm(FormType.submit);
+            form1.setAccessModel(AccessModel.open);
+            form1.setDeliverPayloads(true);
+            form1.setNotifyRetract(true);
+            form1.setPersistentItems(true);
+            form1.setPublishModel(PublishModel.open);
+            node.sendConfigurationForm(form1);
+        } catch (XMPPException e) {
+            e.printStackTrace();
+        }
     }
 
 
