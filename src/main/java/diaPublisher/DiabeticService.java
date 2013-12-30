@@ -33,21 +33,11 @@ public class DiabeticService {
             int length = list.size();
             if (length <= 20) {
                 for (int i = 0; i < length; i++) {
-                    Element bzEntry = new Element("BZeintrag");
-                    Element node = (Element) list.get(i);
-                    bzEntry.addContent(new Element("Blutzucker").setText(node.getChildText("Blutzucker")));
-                    bzEntry.addContent(new Element("Uhrzeit").setText(node.getChildText("Uhrzeit")));
-                    bzEntry.addContent(new Element("Datum").setText(node.getChildText("Datum")));
-                    lastEntries.getRootElement().addContent(bzEntry);
+                    createElement(lastEntries, list, i);
                 }
             } else {
                 for (int i = length - 20; i < length; i++) {
-                    Element bzEntry = new Element("BZeintrag");
-                    Element node = (Element) list.get(i);
-                    bzEntry.addContent(new Element("Blutzucker").setText(node.getChildText("Blutzucker")));
-                    bzEntry.addContent(new Element("Uhrzeit").setText(node.getChildText("Uhrzeit")));
-                    bzEntry.addContent(new Element("Datum").setText(node.getChildText("Datum")));
-                    lastEntries.getRootElement().addContent(bzEntry);
+                    createElement(lastEntries, list, i);
                 }
             }
 
@@ -64,6 +54,15 @@ public class DiabeticService {
         } catch (JDOMException jdomex) {
             System.out.println(jdomex.getMessage());
         }
+    }
+
+    private void createElement(Document lastEntries, List list, int i) {
+        Element bzEntry = new Element("BZeintrag");
+        Element node = (Element) list.get(i);
+        bzEntry.addContent(new Element("Blutzucker").setText(node.getChildText("Blutzucker")));
+        bzEntry.addContent(new Element("Uhrzeit").setText(node.getChildText("Uhrzeit")));
+        bzEntry.addContent(new Element("Datum").setText(node.getChildText("Datum")));
+        lastEntries.getRootElement().addContent(bzEntry);
     }
 
 

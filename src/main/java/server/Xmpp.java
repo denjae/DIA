@@ -5,14 +5,12 @@ import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.packet.RosterPacket;
-import org.jivesoftware.smackx.ServiceDiscoveryManager;
 import org.jivesoftware.smackx.pubsub.*;
-import org.xmpp.packet.Roster;
 
 import java.util.Collection;
 
 public class Xmpp {
-    ConnectionConfiguration config = new ConnectionConfiguration("127.0.0.1", 5222,"localhost");
+    ConnectionConfiguration config = new ConnectionConfiguration("127.0.0.1", 5222, "localhost");
     private XMPPConnection connection = new XMPPConnection(config);
     private PubSubManager mgr;
 
@@ -20,12 +18,13 @@ public class Xmpp {
         try {
             connection.connect();
             connection.login(user, pass);
-             mgr = new PubSubManager(connection);
+            mgr = new PubSubManager(connection);
         } catch (XMPPException e) {
             System.err.println("Login failed!");
             e.printStackTrace();
             System.exit(1);
-        }}
+        }
+    }
 
     public XMPPConnection getConnection() {
         return this.connection;
@@ -55,7 +54,7 @@ public class Xmpp {
 
     }
 
-    public void createNode(String user){
+    public void createNode(String user) {
         try {
             LeafNode node = mgr.createNode(user);
             ConfigureForm form1 = new ConfigureForm(FormType.submit);
@@ -81,7 +80,7 @@ public class Xmpp {
     //Uebertraegt einen neuen BZ-Wert
     public void sendBZ(int bz, String name, String time, String date) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(name);
-        SimplePayload payload = new SimplePayload("Liveticker", null, " <BZeintrag><Blutzucker>"+ bz+ "</Blutzucker><Uhrzeit>" +time+ "</Uhrzeit><Datum>" +date+ "</Datum></BZeintrag>");
+        SimplePayload payload = new SimplePayload("Liveticker", null, " <BZeintrag><Blutzucker>" + bz + "</Blutzucker><Uhrzeit>" + time + "</Uhrzeit><Datum>" + date + "</Datum></BZeintrag>");
         PayloadItem item = new PayloadItem<SimplePayload>(name, payload);
         node.publish(item);
         System.out.println("Eintrag erfolgreich hinzugefuegt");
