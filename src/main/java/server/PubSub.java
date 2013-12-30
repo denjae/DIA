@@ -26,12 +26,6 @@ public class PubSub {
         }}
 
     public XMPPConnection getConnection() {
-
-
-
-
-
-
         return this.connection;
     }
 
@@ -52,35 +46,28 @@ public class PubSub {
     }
 
     //Abonniert Topic fuer angemeldeten Benutzer
-    public void subscribe(String team) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(team);
+    public void subscribe(String user) throws XMPPException {
+        LeafNode node = (LeafNode) mgr.getNode(user);
         node.addItemEventListener(new ItemEventCoordinator<RosterPacket.Item>());
         node.subscribe(connection.getUser());
 
     }
 
-    //Meldet angemeldeten Benutzer von uebergebenem Knoten ab
-    public void unsubscribe(String team) throws XMPPException {
-
-        LeafNode node = (LeafNode) mgr.getNode(team);
-        node.addItemEventListener(new ItemEventCoordinator<Roster.Item>());
-        node.unsubscribe(connection.getUser());
-    }
 
     //Gibt die publizierten Nachrichten des ausgewaehlten Knoten zurueck
-    public Collection getMessagesFromNode(String bz) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(bz);
+    public Collection getMessagesFromNode(String user) throws XMPPException {
+        LeafNode node = (LeafNode) mgr.getNode(user);
         Collection<? extends Item> items = node.getItems();
         return items;
     }
 
-    //Publiziert Kommentar
+    //Uebertraegt einen neuen BZ-Wert zum Server
     public void sendBZ(int bz, String name, String time, String date) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(name);
         SimplePayload payload = new SimplePayload("Liveticker", null, " <BZeintrag><Blutzucker>"+ bz+ "</Blutzucker><Uhrzeit>" +time+ "</Uhrzeit><Datum>" +date+ "</Datum></BZeintrag>");
         PayloadItem item = new PayloadItem<SimplePayload>(name, payload);
         node.publish(item);
-        System.out.println("Kommentar erzeugt.");
+        System.out.println("Eintrag erfolgreich hinzugefuegt");
     }
 
 
