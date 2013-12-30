@@ -61,7 +61,7 @@ public class PubSub {
         return items;
     }
 
-    //Uebertraegt einen neuen BZ-Wert zum Server
+    //Uebertraegt einen neuen BZ-Wert
     public void sendBZ(int bz, String name, String time, String date) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(name);
         SimplePayload payload = new SimplePayload("Liveticker", null, " <BZeintrag><Blutzucker>"+ bz+ "</Blutzucker><Uhrzeit>" +time+ "</Uhrzeit><Datum>" +date+ "</Datum></BZeintrag>");
