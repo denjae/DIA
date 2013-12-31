@@ -47,7 +47,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.maventest.App</mainClass>
+                            <mainClass>main.java.gui.Login</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
