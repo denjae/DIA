@@ -4,11 +4,47 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>DIA</groupId>
-    <artifactId>DIA</artifactId>
+    <groupId>de.eis</groupId>
+    <artifactId>dia</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <dependencies>
 
+    <name>DIA</name>
+    <description>DIAbetes DIAry</description>
+
+    <!-- general information -->
+    <organization>
+        <url>www.medieninformatik.fh-koeln.de/</url>
+        <name>cologne university of applied science</name>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>Dennis Jaeger</name>
+            <organization>cologne university of applied science</organization>
+        </developer>
+        <developer>
+            <name>Oliver Thesenvitz</name>
+            <organization>cologne university of applied science</organization>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>gui.Login</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
         <dependency>
             <groupId>org.igniterealtime.smack</groupId>
             <artifactId>smack</artifactId>
@@ -38,22 +74,6 @@
             <version>1.2.3</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>main.java.gui.Login</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 
 </project>
