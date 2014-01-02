@@ -11,7 +11,6 @@ import java.awt.event.ItemListener;
  */
 public class Login {
     private JPanel panel1;
-    private JLabel Header;
     private JButton login;
     private JComboBox ChoosingUser;
     private JTextField benutzernameTextField;
