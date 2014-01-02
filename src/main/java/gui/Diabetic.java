@@ -8,5 +8,5 @@ import javax.swing.*;
 public class Diabetic {
     private JLabel DiaLabel;
     private JTextField bloodSugar;
-    private JTable table1;
+    private JTable output;
 }
