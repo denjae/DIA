@@ -12,6 +12,6 @@ public class Diabetic {
     private JTextField time;
     private JTextField date;
     private JButton send;
-    private JButton button1;
-    private JButton button2;
+    private JButton buttonLeft;
+    private JButton buttonRight;
 }
