@@ -1,5 +1,6 @@
 package gui;
 
+import com.google.inject.internal.util.$FinalizableSoftReference;
 import diaPublisher.DiabeticService;
 import org.jivesoftware.smack.XMPPException;
 import server.Xmpp;
@@ -70,9 +71,14 @@ public class Diabetic {
         send.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dia.setBZ(user, bz, timeInput, dateInput);
                 try {
-                    xmpp.sendBZ(bz,user,timeInput,dateInput);
+                    System.out.println(user);
+                    System.out.println(bz);
+                    System.out.println(timeInput);
+                    System.out.println(dateInput);
+                    dia.setBZ(user, bz, timeInput, dateInput);
+
+                    xmpp.sendBZ(bz, user, timeInput, dateInput);
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
                 }
@@ -86,7 +92,7 @@ public class Diabetic {
         this.user = name;
     }
 
-    public  void run() {
+    public void run() {
         JFrame frame = new JFrame("Diabetic");
         frame.setContentPane(new Diabetic().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

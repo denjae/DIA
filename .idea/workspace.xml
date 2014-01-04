@@ -8,6 +8,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.form" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,10 +90,14 @@
       <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="34" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.3487395" vertical-offset="209" max-vertical-offset="930">
+            <state line="35" column="8" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.7331933" vertical-offset="814" max-vertical-offset="1290">
               <folding>
-                <element signature="e#1352#1732#0" expanded="true" />
-                <element signature="e#1721#1722#0" expanded="true" />
+                <element signature="e#1002#1315#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1354#1752#0" expanded="true" />
+                <element signature="e#1741#1742#0" expanded="true" />
+                <element signature="e#1787#2280#0" expanded="true" />
+                <element signature="e#2268#2269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,19 +113,19 @@
       <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="21" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1530">
+            <state line="74" column="42" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.0" vertical-offset="1144" max-vertical-offset="1620">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#861#1235#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1342#1690#0" expanded="true" />
-                <element signature="e#1679#1680#0" expanded="true" />
-                <element signature="e#1796#2144#0" expanded="true" />
-                <element signature="e#2133#2134#0" expanded="true" />
-                <element signature="e#2262#2636#0" expanded="true" />
-                <element signature="e#2625#2626#0" expanded="true" />
-                <element signature="e#2751#2752#0" expanded="true" />
-                <element signature="e#2783#2784#0" expanded="true" />
+                <element signature="e#927#1301#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1408#1756#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+                <element signature="e#1862#2210#0" expanded="true" />
+                <element signature="e#2199#2200#0" expanded="true" />
+                <element signature="e#2328#2902#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#3017#3018#0" expanded="true" />
+                <element signature="e#3049#3050#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +135,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="59" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1155">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1216,7 +1223,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="59" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1155">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,25 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="21" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1530">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#861#1235#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1342#1690#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#1796#2144#0" expanded="true" />
-            <element signature="e#2133#2134#0" expanded="true" />
-            <element signature="e#2262#2636#0" expanded="true" />
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/src.zip!/javax/swing/plaf/basic/BasicButtonListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="251" column="0" selection-start="8172" selection-end="8172" vertical-scroll-proportion="0.33193278" vertical-offset="3127" max-vertical-offset="4365">
@@ -1253,12 +1243,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="42" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.0" vertical-offset="1144" max-vertical-offset="1620">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#927#1301#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1408#1756#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1862#2210#0" expanded="true" />
+            <element signature="e#2199#2200#0" expanded="true" />
+            <element signature="e#2328#2902#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#3049#3050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.3487395" vertical-offset="209" max-vertical-offset="930">
+        <state line="35" column="8" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.7331933" vertical-offset="814" max-vertical-offset="1290">
           <folding>
-            <element signature="e#1352#1732#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1002#1315#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1354#1752#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+            <element signature="e#1787#2280#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
           </folding>
         </state>
       </provider>

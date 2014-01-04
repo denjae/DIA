@@ -12,18 +12,50 @@ import java.awt.event.ItemListener;
 public class Login {
     private JPanel panel1;
     private JButton login;
-    private JComboBox ChoosingUser;
-    private JTextField benutzernameTextField;
+    private JComboBox choosingUser;
+    private JTextField username;
     private int selectedUser = 0;
+    private static JFrame frame = new JFrame("Login");
     String name;
 
-    public Login() {
-        ChoosingUser.addItemListener(new ItemListener() {
+    public static void main(String[] args) {
 
-                public void itemStateChanged( ItemEvent event ) {
-                if( event.getStateChange() == ItemEvent.SELECTED ) {
-                    selectedUser = ChoosingUser.getSelectedIndex();
+        frame.setContentPane(new Login().panel1);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    public Login() {
+        initComponents();
+    }
+
+
+    //Erstellt die Komponenten des Fensters
+    private void initComponents(){
+        panel1 = new JPanel();
+        login = new JButton();
+        choosingUser = new JComboBox();
+        username = new JTextField();
+
+        choosingUser.addItemListener(new ItemListener() {
+
+            public void itemStateChanged(ItemEvent event) {
+                if (event.getStateChange() == ItemEvent.SELECTED) {
+                    selectedUser = choosingUser.getSelectedIndex();
                     System.out.println(selectedUser);
+                }
+            }
+        });
+
+        username.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    name = username.getText();
+                    System.out.println(name);
+                } catch (Exception exc) {
+                    JOptionPane.showMessageDialog(null, "Bitte einen gueltigen Namen eingeben!");
                 }
             }
         });
@@ -32,38 +64,21 @@ public class Login {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-               if(selectedUser == 0){
+                if (selectedUser == 0) {
                     Diabetic diabetic = new Diabetic();
-                   diabetic.run();
+                    diabetic.run();
                     diabetic.setUser(name);
                 } /*
                 else{
                     Doctor doctor = new Doctor();
                     doctor.setName(name);
                 }*/
+                frame.dispose();
             }
 
         });
-
-
-        benutzernameTextField.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    name = benutzernameTextField.getText();
-                }
-                catch (Exception exc){
-                    JOptionPane.showMessageDialog(null, "Bitte einen gueltigen Namen eingeben!");
-                }
-            }
-        });
     }
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Login");
-        frame.setContentPane(new Login().panel1);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
+
+
 }
