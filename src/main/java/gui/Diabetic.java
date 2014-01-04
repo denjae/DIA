@@ -14,4 +14,19 @@ public class Diabetic {
     private JButton send;
     private JButton buttonLeft;
     private JButton buttonRight;
+    private JPanel mainPanel;
+    private String user;
+
+    public void setUser(String name){
+        this.user=name;
+
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Diabetic");
+        frame.setContentPane(new Diabetic().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }
