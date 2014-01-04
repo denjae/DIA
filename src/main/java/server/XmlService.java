@@ -18,6 +18,8 @@ import java.util.List;
  * Created by denjae on 10.12.13.
  */
 public class XmlService {
+
+    //erstellt neues File wenn ein neuer User angelegt wird
     public void createFile(String user) {
         try {
             Document document = new Document();

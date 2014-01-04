@@ -1,5 +1,8 @@
 package gui;
 
+import diaPublisher.DiabeticService;
+import server.Xmpp;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,6 +25,8 @@ public class Diabetic {
     private int bz = 0;
     private String timeInput;
     private String dateInput;
+    private Xmpp xmpp;
+    private DiabeticService dia;
 
     public Diabetic() {
         //Liest eingegebenen Blutzuckerwert aus und speichert diesen als Integer-Wert
@@ -60,8 +65,16 @@ public class Diabetic {
 
             }
         });
+        //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
+        send.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 
+    //Setzt den Benutzernamen, der im Loginfenster eingegeben wurde
     public void setUser(String name) {
         this.user = name;
     }
