@@ -15,6 +15,7 @@ public class Login {
     private JComboBox ChoosingUser;
     private JTextField benutzernameTextField;
     private int selectedUser = 0;
+    String name;
 
     public Login() {
         ChoosingUser.addItemListener(new ItemListener() {
@@ -31,10 +32,11 @@ public class Login {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-               /* if(selectedUser == 0){
+               if(selectedUser == 0){
                     Diabetic diabetic = new Diabetic();
-                    diabetic.setName(name);
-                }
+                   diabetic.run();
+                    diabetic.setUser(name);
+                } /*
                 else{
                     Doctor doctor = new Doctor();
                     doctor.setName(name);
@@ -44,6 +46,17 @@ public class Login {
         });
 
 
+        benutzernameTextField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    name = benutzernameTextField.getText();
+                }
+                catch (Exception exc){
+                    JOptionPane.showMessageDialog(null, "Bitte einen gueltigen Namen eingeben!");
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
