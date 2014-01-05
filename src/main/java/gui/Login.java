@@ -10,7 +10,32 @@ import java.awt.event.ItemListener;
  * Created by denjae on 31.12.13.
  */
 public class Login {
-    private JPanel panel1;
+    public JPanel getMainPanel() {
+        return mainPanel;
+    }
+
+    private JPanel mainPanel;
+
+    public JButton getLogin() {
+        return login;
+    }
+
+    public JComboBox getChoosingUser() {
+        return choosingUser;
+    }
+
+    public JTextField getUsername() {
+        return username;
+    }
+
+    public int getSelectedUser() {
+        return selectedUser;
+    }
+
+    public static JFrame getFrame() {
+        return frame;
+    }
+
     private JButton login;
     private JComboBox choosingUser;
     private JTextField username;
@@ -20,7 +45,7 @@ public class Login {
 
     public static void main(String[] args) {
 
-        frame.setContentPane(new Login().panel1);
+        frame.setContentPane(new Login().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
@@ -33,10 +58,7 @@ public class Login {
 
     //Erstellt die Komponenten des Fensters
     private void initComponents(){
-        panel1 = new JPanel();
-        login = new JButton();
-        choosingUser = new JComboBox();
-        username = new JTextField();
+
 
         choosingUser.addItemListener(new ItemListener() {
 
@@ -60,8 +82,6 @@ public class Login {
             }
         });
         login.addActionListener(new ActionListener() {
-
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (selectedUser == 0) {
