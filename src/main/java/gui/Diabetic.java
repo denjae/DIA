@@ -27,6 +27,10 @@ public class Diabetic {
     private JButton buttonLeft;
     private JButton buttonRight;
 
+    public String getUser() {
+        return user;
+    }
+
     private String user;
     private int bz = 0;
     private String timeInput;
@@ -45,6 +49,7 @@ public class Diabetic {
                 } catch (Exception exc) {
                     JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
                 }
+                user =  getUser();
                 timeInput = time.getText();
                 dateInput = date.getText();
                 try {

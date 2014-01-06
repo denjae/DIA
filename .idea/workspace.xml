@@ -5,9 +5,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.java" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +85,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="32" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="2370">
-              <folding />
+            <state line="27" column="8" selection-start="649" selection-end="649" vertical-scroll-proportion="-1.6889849" vertical-offset="1067" max-vertical-offset="2055">
+              <folding>
+                <element signature="e#1799#2290#0" expanded="true" />
+                <element signature="e#2278#2279#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,13 +113,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.61555076" vertical-offset="105" max-vertical-offset="1950">
+            <state line="71" column="35" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
               <folding>
-                <element signature="e#1065#1976#0" expanded="true" />
-                <element signature="e#1965#1966#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#1123#2069#0" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
+                <element signature="e#2184#2185#0" expanded="true" />
+                <element signature="e#2216#2217#0" expanded="true" />
                 <element signature="initializer##0;class#Diabetic#0" expanded="true" />
                 <element signature="initializer##0;class#Diabetic#0" expanded="true" />
               </folding>
@@ -163,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.form" />
         <option value="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       </list>
     </option>
@@ -748,7 +754,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356858" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32309747" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977304" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329105" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1107,13 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="32" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="24" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
@@ -1154,12 +1153,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.61555076" vertical-offset="105" max-vertical-offset="1950">
+        <state line="71" column="35" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
           <folding>
-            <element signature="e#1065#1976#0" expanded="true" />
-            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#1123#2069#0" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#2184#2185#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
             <element signature="initializer##0;class#Diabetic#0" expanded="true" />
             <element signature="initializer##0;class#Diabetic#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="8" selection-start="649" selection-end="649" vertical-scroll-proportion="-1.6889849" vertical-offset="1067" max-vertical-offset="2055">
+          <folding>
+            <element signature="e#1799#2290#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
           </folding>
         </state>
       </provider>

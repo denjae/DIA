@@ -25,7 +25,7 @@ public class Login {
 
     public Login() {
         init();
-        //initComponents();
+        initComponents();
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
