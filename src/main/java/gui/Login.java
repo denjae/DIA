@@ -25,13 +25,19 @@ public class Login {
 
     public Login() {
         init();
-        initComponents();
+        //initComponents();
+        login.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(username.getText());
+            }
+        });
     }
-
 
     //Erstellt die Komponenten des Fensters
     private void initComponents() {
 
+/*
         choosingUser.addItemListener(new ItemListener() {
 
             public void itemStateChanged(ItemEvent event) {
@@ -40,7 +46,8 @@ public class Login {
                     System.out.println(selectedUser);
                 }
             }
-        });
+        });*/
+
 
         username.addActionListener(new ActionListener() {
             @Override
