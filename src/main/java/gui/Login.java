@@ -41,7 +41,6 @@ public class Login {
                     Diabetic diabetic = new Diabetic();
                     diabetic.setUser(name);
                     diabetic.run();
-                    System.out.println(diabetic.getUser());
                     frame.dispose();
 
                 }

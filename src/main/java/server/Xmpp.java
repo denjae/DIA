@@ -78,9 +78,9 @@ public class Xmpp {
     }
 
     //Uebertraegt einen neuen BZ-Wert
-    public void sendBZ(int bz, String name, String time, String date) throws XMPPException {
+    public void sendBZ(String name,int bz, String time, String date) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(name);
-        SimplePayload payload = new SimplePayload("Liveticker", null, " <BZeintrag><Blutzucker>" + bz + "</Blutzucker><Uhrzeit>" + time + "</Uhrzeit><Datum>" + date + "</Datum></BZeintrag>");
+        SimplePayload payload = new SimplePayload("BZ", null, " <BZeintrag><Blutzucker>" + bz + "</Blutzucker><Uhrzeit>" + time + "</Uhrzeit><Datum>" + date + "</Datum></BZeintrag>");
         PayloadItem item = new PayloadItem<SimplePayload>(name, payload);
         node.publish(item);
         System.out.println("Eintrag erfolgreich hinzugefuegt");

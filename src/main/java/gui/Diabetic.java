@@ -26,14 +26,47 @@ public class Diabetic {
     private JButton send;
     private JButton buttonLeft;
     private JButton buttonRight;
-
-    private String user = "norbert";
+    private String user;
     private int bz = 0;
     private String timeInput;
     private String dateInput;
-    private Xmpp xmpp;
-    private DiabeticService dia;
 
+
+    public Diabetic() {
+
+        //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
+        send.addActionListener(new ActionListener() {
+            private String user = getUser();
+            private Xmpp xmpp = new Xmpp();
+            private DiabeticService dia = new DiabeticService();
+
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    bz = Integer.parseInt(bloodSugar.getText());
+                } catch (Exception exc) {
+                    JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
+                }
+                System.out.println("gesetzter User" + user);
+                System.out.println("Uebergebener User" + getUser());
+                bz = Integer.parseInt(bloodSugar.getText());
+                timeInput = time.getText();
+                dateInput = date.getText();
+                System.out.println("User " + user);
+                System.out.println("BZ " + bz);
+                System.out.println("Zeit " + timeInput);
+                System.out.println("Datum " + dateInput);
+                dia.setBZ(user, bz, timeInput, dateInput);
+                /*try {
+                    xmpp.sendBZ(user, bz, timeInput, dateInput);
+                } catch (XMPPException e1) {
+                    e1.printStackTrace();
+                }*/
+
+            }
+        });
+    }
 
     //Setzt den Benutzernamen, der im Loginfenster eingegeben wurde
     public void setUser(String name) {
@@ -44,36 +77,6 @@ public class Diabetic {
     public String getUser() {
         return user;
     }
-
-    public Diabetic() {
-
-        //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
-        send.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    bz = Integer.parseInt(bloodSugar.getText());
-                } catch (Exception exc) {
-                    JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
-                }
-                user = getUser();
-                timeInput = time.getText();
-                dateInput = date.getText();
-                try {
-                    System.out.println("User " + user);
-                    System.out.println("BZ " + bz);
-                    System.out.println("Zeit " + timeInput);
-                    System.out.println("Datum " + dateInput);
-                    dia.setBZ(user, bz, timeInput, dateInput);
-                    xmpp.sendBZ(bz, user, timeInput, dateInput);
-                } catch (XMPPException e1) {
-                    e1.printStackTrace();
-                }
-
-            }
-        });
-    }
-
 
 
     public void run() {

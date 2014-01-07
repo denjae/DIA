@@ -9,6 +9,6 @@ public class XmppTest {
         Xmpp xmpp = new Xmpp();
         xmpp.login("user1", "test");
         //xmpp.createNode("denjae");
-        xmpp.sendBZ(99,"denjae", "13:13", "01.02.2003");
+        xmpp.sendBZ("denjae", 99, "13:13", "01.02.2003");
     }
 }
