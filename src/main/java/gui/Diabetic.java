@@ -30,6 +30,7 @@ public class Diabetic {
     private int bz = 0;
     private String timeInput;
     private String dateInput;
+    private Diabetic diabetic;
 
 
     public Diabetic() {
@@ -43,13 +44,19 @@ public class Diabetic {
 
             @Override
             public void actionPerformed(ActionEvent e) {
+                user = diabetic.getUser();
+                try {
+                    xmpp.login("user1", "user1");
+                } catch (XMPPException e1) {
+                    e1.printStackTrace();
+                }
                 try {
                     bz = Integer.parseInt(bloodSugar.getText());
                 } catch (Exception exc) {
                     JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
                 }
-                System.out.println("gesetzter User" + user);
-                System.out.println("Uebergebener User" + getUser());
+                System.out.println("gesetzter User " + user);
+                System.out.println("Uebergebener User " + diabetic.getUser());
                 bz = Integer.parseInt(bloodSugar.getText());
                 timeInput = time.getText();
                 dateInput = date.getText();
@@ -58,11 +65,11 @@ public class Diabetic {
                 System.out.println("Zeit " + timeInput);
                 System.out.println("Datum " + dateInput);
                 dia.setBZ(user, bz, timeInput, dateInput);
-                /*try {
+                try {
                     xmpp.sendBZ(user, bz, timeInput, dateInput);
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
-                }*/
+                }
 
             }
         });
@@ -75,16 +82,22 @@ public class Diabetic {
 
     //Gibt gesetzten User zurueck
     public String getUser() {
+
+
         return user;
     }
 
 
     public void run() {
         JFrame frame = new JFrame("Diabetic");
-        frame.setContentPane(new Diabetic().mainPanel);
+        frame.setContentPane(diabetic.mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+    }
+
+    public void setDiabetic(Diabetic diabetic) {
+        this.diabetic = diabetic;
     }
 
     {

@@ -40,6 +40,8 @@ public class Login {
                 if (choice == 0) {
                     Diabetic diabetic = new Diabetic();
                     diabetic.setUser(name);
+                    diabetic.setDiabetic(diabetic);
+                    System.out.println(name);
                     diabetic.run();
                     frame.dispose();
 
