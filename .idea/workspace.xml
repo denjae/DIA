@@ -5,9 +5,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.form" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,29 +101,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="24" selection-start="2514" selection-end="2514" vertical-scroll-proportion="1.237581" vertical-offset="417" max-vertical-offset="1125">
+            <state line="25" column="59" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1425">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="initializer##0;class#Login#0" expanded="true" />
+                <element signature="e#884#1515#0" expanded="true" />
+                <element signature="e#1504#1505#0" expanded="true" />
+                <element signature="method#$$$setupUI$$$#0;class#Login#0" expanded="true" />
+                <element signature="method#$$$setupUI$$$#0;class#Login#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="35" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
+            <state line="66" column="0" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.33261338" vertical-offset="671" max-vertical-offset="2100">
               <folding>
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#1123#2069#0" expanded="true" />
-                <element signature="e#2058#2059#0" expanded="true" />
-                <element signature="e#2184#2185#0" expanded="true" />
-                <element signature="e#2216#2217#0" expanded="true" />
+                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1167#1168#0" expanded="true" />
+                <element signature="e#1310#2293#0" expanded="true" />
+                <element signature="e#2282#2283#0" expanded="true" />
                 <element signature="initializer##0;class#Diabetic#0" expanded="true" />
                 <element signature="initializer##0;class#Diabetic#0" expanded="true" />
               </folding>
@@ -170,9 +172,9 @@
         <option value="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.form" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       </list>
     </option>
   </component>
@@ -792,7 +794,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329105" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3271028" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1079,7 +1081,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/returnBz.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="467" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="467">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
@@ -1177,22 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="35" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
-          <folding>
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#1123#2069#0" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2216#2217#0" expanded="true" />
-            <element signature="initializer##0;class#Diabetic#0" expanded="true" />
-            <element signature="initializer##0;class#Diabetic#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1200,10 +1188,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="24" selection-start="2514" selection-end="2514" vertical-scroll-proportion="1.237581" vertical-offset="417" max-vertical-offset="1125">
+        <state line="25" column="59" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1425">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Login#0" expanded="true" />
+            <element signature="e#884#1515#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#Login#0" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#Login#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.33261338" vertical-offset="671" max-vertical-offset="2100">
+          <folding>
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+            <element signature="e#1310#2293#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="initializer##0;class#Diabetic#0" expanded="true" />
+            <element signature="initializer##0;class#Diabetic#0" expanded="true" />
           </folding>
         </state>
       </provider>

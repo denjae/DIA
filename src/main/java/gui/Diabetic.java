@@ -27,16 +27,23 @@ public class Diabetic {
     private JButton buttonLeft;
     private JButton buttonRight;
 
-    public String getUser() {
-        return user;
-    }
-
-    private String user;
+    private String user = "norbert";
     private int bz = 0;
     private String timeInput;
     private String dateInput;
     private Xmpp xmpp;
     private DiabeticService dia;
+
+
+    //Setzt den Benutzernamen, der im Loginfenster eingegeben wurde
+    public void setUser(String name) {
+        this.user = name;
+    }
+
+    //Gibt gesetzten User zurueck
+    public String getUser() {
+        return user;
+    }
 
     public Diabetic() {
 
@@ -49,16 +56,15 @@ public class Diabetic {
                 } catch (Exception exc) {
                     JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
                 }
-                user =  getUser();
+                user = getUser();
                 timeInput = time.getText();
                 dateInput = date.getText();
                 try {
-                    System.out.println(user);
-                    System.out.println(bz);
-                    System.out.println(timeInput);
-                    System.out.println(dateInput);
+                    System.out.println("User " + user);
+                    System.out.println("BZ " + bz);
+                    System.out.println("Zeit " + timeInput);
+                    System.out.println("Datum " + dateInput);
                     dia.setBZ(user, bz, timeInput, dateInput);
-
                     xmpp.sendBZ(bz, user, timeInput, dateInput);
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
@@ -68,10 +74,7 @@ public class Diabetic {
         });
     }
 
-    //Setzt den Benutzernamen, der im Loginfenster eingegeben wurde
-    public void setUser(String name) {
-        this.user = name;
-    }
+
 
     public void run() {
         JFrame frame = new JFrame("Diabetic");
