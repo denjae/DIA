@@ -38,10 +38,7 @@ public class Login {
                 choice = choiceUser.getSelectedIndex();
 
                 if (choice == 0) {
-                    Diabetic diabetic = new Diabetic();
-                    diabetic.setUser(name);
-                    diabetic.setDiabetic(diabetic);
-                    System.out.println(name);
+                    Diabetic diabetic = new Diabetic(name);
                     diabetic.run();
                     frame.dispose();
 

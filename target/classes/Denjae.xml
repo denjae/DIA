@@ -195,4 +195,9 @@
     <Uhrzeit>12</Uhrzeit>
     <Datum>123</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>^23</Uhrzeit>
+    <Datum>123</Datum>
+  </BZeintrag>
 </BZ>

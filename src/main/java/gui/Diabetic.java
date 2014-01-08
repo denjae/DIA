@@ -33,18 +33,17 @@ public class Diabetic {
     private Diabetic diabetic;
 
 
-    public Diabetic() {
+    public Diabetic(final String name) {
 
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         send.addActionListener(new ActionListener() {
-            private String user = getUser();
+            private String user = name;
             private Xmpp xmpp = new Xmpp();
             private DiabeticService dia = new DiabeticService();
 
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                user = diabetic.getUser();
                 try {
                     xmpp.login("user1", "user1");
                 } catch (XMPPException e1) {
@@ -56,7 +55,6 @@ public class Diabetic {
                     JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
                 }
                 System.out.println("gesetzter User " + user);
-                System.out.println("Uebergebener User " + diabetic.getUser());
                 bz = Integer.parseInt(bloodSugar.getText());
                 timeInput = time.getText();
                 dateInput = date.getText();
@@ -90,7 +88,7 @@ public class Diabetic {
 
     public void run() {
         JFrame frame = new JFrame("Diabetic");
-        frame.setContentPane(diabetic.mainPanel);
+        frame.setContentPane(this.mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
