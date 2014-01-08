@@ -200,4 +200,9 @@
     <Uhrzeit>^23</Uhrzeit>
     <Datum>123</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>243</Blutzucker>
+    <Uhrzeit>fweuh</Uhrzeit>
+    <Datum>dwvui</Datum>
+  </BZeintrag>
 </BZ>
