@@ -5,11 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Denjae.xml" afterPath="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,19 +84,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="34" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="2130">
+            <state line="67" column="92" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.49568966" vertical-offset="610" max-vertical-offset="2145">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Denjae.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Denjae.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="17" selection-start="4830" selection-end="4943" vertical-scroll-proportion="0.591195" vertical-offset="2808" max-vertical-offset="3285">
+            <state line="212" column="106" selection-start="5070" selection-end="5070" vertical-scroll-proportion="0.0" vertical-offset="2808" max-vertical-offset="3285">
               <folding />
             </state>
           </provider>
@@ -120,10 +116,9 @@
       <file leaf-file-name="Xmpp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="41" selection-start="2811" selection-end="3088" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1395">
+            <state line="85" column="72" selection-start="3152" selection-end="3152" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1395">
               <folding>
-                <element signature="e#965#966#0" expanded="false" />
-                <element signature="e#1003#1004#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1026,8 +1021,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="33" selection-start="1284" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1260">
           <folding>
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1073,8 +1067,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="33" selection-start="1284" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1260">
           <folding>
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1120,8 +1113,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="48" selection-start="2681" selection-end="2681" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1755">
           <folding>
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1215,16 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="41" selection-start="2811" selection-end="3088" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1395">
-          <folding>
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.22821577" vertical-offset="0" max-vertical-offset="723">
@@ -1255,16 +1237,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="34" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="2130">
+        <state line="212" column="106" selection-start="5070" selection-end="5070" vertical-scroll-proportion="0.0" vertical-offset="2808" max-vertical-offset="3285">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="17" selection-start="4830" selection-end="4943" vertical-scroll-proportion="0.591195" vertical-offset="2808" max-vertical-offset="3285">
+        <state line="85" column="72" selection-start="3152" selection-end="3152" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1395">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="92" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.49568966" vertical-offset="610" max-vertical-offset="2145">
           <folding />
         </state>
       </provider>

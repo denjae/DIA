@@ -65,6 +65,7 @@ public class Diabetic {
                 dia.setBZ(user, bz, timeInput, dateInput);
                 try {
                     xmpp.sendBZ(user, bz, timeInput, dateInput);
+                    JOptionPane.showMessageDialog(null, "Blutzucker erfolgreich eingetragen!");
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
                 }
