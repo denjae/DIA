@@ -215,4 +215,9 @@
     <Uhrzeit>11.01.2014</Uhrzeit>
     <Datum>17:45</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>testNode</Uhrzeit>
+    <Datum>test</Datum>
+  </BZeintrag>
 </BZ>

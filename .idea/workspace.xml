@@ -5,9 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Denjae.xml" afterPath="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/Xmpp.java" afterPath="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XmppTest.java" afterPath="$PROJECT_DIR$/src/test/java/XmppTest.java" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,12 +96,21 @@
       <file leaf-file-name="Xmpp.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="8" selection-start="606" selection-end="606" vertical-scroll-proportion="0.58189654" vertical-offset="45" max-vertical-offset="1755">
+            <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.55818963" vertical-offset="146" max-vertical-offset="1755">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1050#1051#0" expanded="true" />
                 <element signature="e#1076#1077#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmppTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XmppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,13 +167,13 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/Tesz.form" />
         <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.form" />
-        <option value="$PROJECT_DIR$/src/test/java/XmppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XmppTest.java" />
       </list>
     </option>
   </component>
@@ -1156,13 +1163,6 @@
         <state line="251" column="0" selection-start="8172" selection-end="8172" vertical-scroll-proportion="0.33193278" vertical-offset="3127" max-vertical-offset="4365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XmppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="91" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/ItemEventCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="29" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -1236,9 +1236,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XmppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="606" selection-end="606" vertical-scroll-proportion="0.58189654" vertical-offset="45" max-vertical-offset="1755">
+        <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.55818963" vertical-offset="146" max-vertical-offset="1755">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1050#1051#0" expanded="true" />

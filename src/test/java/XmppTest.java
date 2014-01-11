@@ -6,7 +6,7 @@ import server.Xmpp;
  */
 public class XmppTest {
     public static void main(String[] args) throws XMPPException {
-        Xmpp xmpp = new Xmpp();
+        Xmpp xmpp = new Xmpp("denjae");
         xmpp.login("user1", "test");
         //xmpp.createNode("denjae");
         xmpp.sendBZ("denjae", 99, "13:13", "01.02.2003");
