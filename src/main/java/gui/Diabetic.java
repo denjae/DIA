@@ -68,6 +68,7 @@ public class Diabetic {
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
                 }
+                xmpp.disconnect();
 
             }
         });

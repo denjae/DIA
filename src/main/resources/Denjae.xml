@@ -205,4 +205,9 @@
     <Uhrzeit>fweuh</Uhrzeit>
     <Datum>dwvui</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>11.01.2014</Uhrzeit>
+    <Datum>17:45</Datum>
+  </BZeintrag>
 </BZ>

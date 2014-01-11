@@ -17,6 +17,15 @@ import java.util.List;
  */
 public class DiabeticService {
 
+    private void createElement(Document lastEntries, List list, int i) {
+        Element bzEntry = new Element("BZeintrag");
+        Element node = (Element) list.get(i);
+        bzEntry.addContent(new Element("Blutzucker").setText(node.getChildText("Blutzucker")));
+        bzEntry.addContent(new Element("Uhrzeit").setText(node.getChildText("Uhrzeit")));
+        bzEntry.addContent(new Element("Datum").setText(node.getChildText("Datum")));
+        lastEntries.getRootElement().addContent(bzEntry);
+    }
+
     public void getBZ(String user) throws JDOMException, IOException {
         SAXBuilder builder = new SAXBuilder();
         File xmlFile = new File("./src/main/resources/" + user + ".xml");
@@ -54,15 +63,6 @@ public class DiabeticService {
         } catch (JDOMException jdomex) {
             System.out.println(jdomex.getMessage());
         }
-    }
-
-    private void createElement(Document lastEntries, List list, int i) {
-        Element bzEntry = new Element("BZeintrag");
-        Element node = (Element) list.get(i);
-        bzEntry.addContent(new Element("Blutzucker").setText(node.getChildText("Blutzucker")));
-        bzEntry.addContent(new Element("Uhrzeit").setText(node.getChildText("Uhrzeit")));
-        bzEntry.addContent(new Element("Datum").setText(node.getChildText("Datum")));
-        lastEntries.getRootElement().addContent(bzEntry);
     }
 
 
