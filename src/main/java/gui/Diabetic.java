@@ -5,6 +5,8 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import diaPublisher.DiabeticService;
 import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smackx.pubsub.LeafNode;
+import org.jivesoftware.smackx.pubsub.PubSubManager;
 import server.Xmpp;
 
 import javax.swing.*;
@@ -38,8 +40,10 @@ public class Diabetic {
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         send.addActionListener(new ActionListener() {
             private String user = name;
-            private Xmpp xmpp = new Xmpp();
+            private Xmpp xmpp = new Xmpp(user);
             private DiabeticService dia = new DiabeticService();
+            PubSubManager mgr = xmpp.getMgr();
+            LeafNode node;
 
 
             @Override
@@ -63,6 +67,22 @@ public class Diabetic {
                 System.out.println("Zeit " + timeInput);
                 System.out.println("Datum " + dateInput);
                 dia.setBZ(user, bz, timeInput, dateInput);
+
+                try {
+                    mgr.getNode(user);
+                } catch (Exception exc) {
+                    try {
+                        mgr.createNode(user);
+                    } catch (XMPPException e1) {
+                        JOptionPane.showMessageDialog(null, "Fehler beim Senden der Werte!");
+                    }
+                }
+                try {
+                    node = (LeafNode) mgr.getNode(user);
+                } catch (XMPPException e1) {
+                    e1.printStackTrace();
+                }
+
                 try {
                     xmpp.sendBZ(user, bz, timeInput, dateInput);
                     JOptionPane.showMessageDialog(null, "Blutzucker erfolgreich eingetragen!");

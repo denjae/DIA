@@ -10,15 +10,39 @@ import org.jivesoftware.smackx.pubsub.*;
 import java.util.Collection;
 
 public class Xmpp {
-    ConnectionConfiguration config = new ConnectionConfiguration("127.0.0.1", 5222, "localhost");
-    private XMPPConnection connection = new XMPPConnection(config);
+    private ConnectionConfiguration config;
+    private XMPPConnection connection;
+    private AccountManager accountManager;
+    private XmlService xmlService;
+    private LeafNode node;
+    private String user;
+
+
+    public Xmpp(String user) {
+        config = new ConnectionConfiguration("127.0.0.1", 5222, "localhost");
+        connection = new XMPPConnection(config);
+        accountManager = new AccountManager(connection);
+        xmlService = new XmlService();
+        mgr = new PubSubManager(connection);
+        try {
+            node = (LeafNode) mgr.getNode(user);
+        } catch (XMPPException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public PubSubManager getMgr() {
+        return mgr;
+    }
+
     private PubSubManager mgr;
 
     public void login(String user, String pass) throws XMPPException {
         try {
             connection.connect();
             connection.login(user, pass);
-            mgr = new PubSubManager(connection);
+
         } catch (XMPPException e) {
             System.err.println("Login failed!");
             e.printStackTrace();
@@ -31,8 +55,8 @@ public class Xmpp {
     }
 
     public void createUser(String user, String password) {
-        AccountManager accountManager = new AccountManager(connection);
-        XmlService xmlService = new XmlService();
+
+
         xmlService.createFile(user);
         try {
             accountManager.createAccount(user, password);
@@ -48,7 +72,7 @@ public class Xmpp {
 
     //Abonniert Topic fuer angemeldeten Benutzer
     public void subscribe(String user) throws XMPPException {
-        LeafNode node = (LeafNode) mgr.getNode(user);
+
         node.addItemEventListener(new ItemEventCoordinator<RosterPacket.Item>());
         node.subscribe(connection.getUser());
 
@@ -78,7 +102,7 @@ public class Xmpp {
     }
 
     //Uebertraegt einen neuen BZ-Wert
-    public void sendBZ(String name,int bz, String time, String date) throws XMPPException {
+    public void sendBZ(String name, int bz, String time, String date) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(name);
         SimplePayload payload = new SimplePayload("BZ", null, " <BZeintrag><Blutzucker>" + bz + "</Blutzucker><Uhrzeit>" + time + "</Uhrzeit><Datum>" + date + "</Datum></BZeintrag>");
         PayloadItem item = new PayloadItem<SimplePayload>(name, payload);
