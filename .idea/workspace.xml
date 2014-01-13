@@ -5,11 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DIA.iml" afterPath="$PROJECT_DIR$/DIA.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XmppTest.java" afterPath="$PROJECT_DIR$/src/test/java/XmppTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,10 +87,12 @@
       <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="82" selection-start="2646" selection-end="2646" vertical-scroll-proportion="-0.37309292" vertical-offset="1154" max-vertical-offset="1875">
+            <state line="65" column="16" selection-start="2214" selection-end="2214" vertical-scroll-proportion="0.5214979" vertical-offset="404" max-vertical-offset="1770">
               <folding>
                 <element signature="docComment;method#$$$setupUI$$$#0;class#Diabetic#0" expanded="false" />
                 <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="false" />
+                <element signature="docComment;method#$$$getRootComponent$$$#0;class#Diabetic#0" expanded="false" />
+                <element signature="method#$$$getRootComponent$$$#0;class#Diabetic#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1198,10 +1196,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="82" selection-start="2646" selection-end="2646" vertical-scroll-proportion="-0.37309292" vertical-offset="1154" max-vertical-offset="1875">
+        <state line="65" column="16" selection-start="2214" selection-end="2214" vertical-scroll-proportion="0.5214979" vertical-offset="404" max-vertical-offset="1770">
           <folding>
             <element signature="docComment;method#$$$setupUI$$$#0;class#Diabetic#0" expanded="false" />
             <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="false" />
+            <element signature="docComment;method#$$$getRootComponent$$$#0;class#Diabetic#0" expanded="false" />
+            <element signature="method#$$$getRootComponent$$$#0;class#Diabetic#0" expanded="false" />
           </folding>
         </state>
       </provider>
