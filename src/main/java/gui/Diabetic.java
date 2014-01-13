@@ -66,9 +66,15 @@ public class Diabetic {
                 System.out.println("BZ " + bz);
                 System.out.println("Zeit " + timeInput);
                 System.out.println("Datum " + dateInput);
-                dia.setBZ(user, bz, timeInput, dateInput);
-
                 try {
+                    dia.setBZ(user, bz, timeInput, dateInput);
+                    JOptionPane.showMessageDialog(null, "Blutzucker erfolgreich eingetragen!");
+                } catch (Exception ecx) {
+                    JOptionPane.showMessageDialog(null, "Fehler bei der Eintragung");
+                }
+
+                //Senden an XMPP-Server im Prototypen nicht notwendig
+              /*  try {
                     mgr.getNode(user);
                 } catch (Exception exc) {
                     try {
@@ -88,7 +94,7 @@ public class Diabetic {
                     JOptionPane.showMessageDialog(null, "Blutzucker erfolgreich eingetragen!");
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
-                }
+                }*/
                 xmpp.disconnect();
 
             }
