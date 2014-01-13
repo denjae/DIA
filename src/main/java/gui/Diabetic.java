@@ -45,7 +45,7 @@ public class Diabetic {
             PubSubManager mgr = xmpp.getMgr();
             LeafNode node;
 
-
+           //ActionListener, der bei Druck auf Senden-Button aktiv wird
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
