@@ -5,13 +5,12 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import diaPublisher.DiabeticService;
 
-
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
+import javax.swing.table.JTableHeader;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 
 /**
  * Created by denjae on 02.01.14.
@@ -50,7 +49,6 @@ public class Diabetic {
                 } catch (Exception exc) {
                     JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
                 }
-                System.out.println("gesetzter User " + user);
                 bz = Integer.parseInt(bloodSugar.getText());
                 timeInput = time.getText();
                 dateInput = date.getText();
@@ -91,18 +89,22 @@ public class Diabetic {
     }
 
 
-    //Setzt den Benutzernamen, der im Loginfenster eingegeben wurde
-    public void setUser(String name) {
-        this.user = name;
+    //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
+    private void createUIComponents() {
+        String[] title = new String[]{
+                "1", "2", "3"
+        };
+        String[][] data = new String[][]{
+                {"a", "b", "c"},
+                {"e", "f", "g"},
+                {"i", "j", "k"}
+        };
+        output = new JTable(data, title);
+        JTableHeader header = output.getTableHeader();
+        output.setTableHeader(header);
+
+
     }
-
-    //Gibt gesetzten User zurueck
-    public String getUser() {
-
-
-        return user;
-    }
-
 
     public void run() {
         JFrame frame = new JFrame("Diabetic");
@@ -110,22 +112,6 @@ public class Diabetic {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-    }
-
-
-    //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
-
-    private void createUIComponents() {
-        String[] title = new String[]{
-                "Blutzucker", "Uhrzeit", "Datum"
-        };
-        String[][] data = new String[][]{
-                {"a", "b", "c"},
-                {"e", "f", "g"},
-                {"i", "j", "k"}
-        };
-
-        output = new JTable(data, title);
     }
 
     /**
@@ -138,21 +124,22 @@ public class Diabetic {
     private void $$$setupUI$$$() {
         createUIComponents();
         mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayoutManager(3, 6, new Insets(0, 0, 0, 0), -1, 60));
+        mainPanel.setLayout(new GridLayoutManager(2, 5, new Insets(0, 0, 0, 0), 80, 60));
         mainPanel.setBorder(BorderFactory.createTitledBorder(null, "DIAbetesDIAry - Ihre Verbindung zum Arzt", TitledBorder.CENTER, TitledBorder.TOP));
         final Spacer spacer1 = new Spacer();
-        mainPanel.add(spacer1, new GridConstraints(1, 5, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        mainPanel.add(spacer1, new GridConstraints(0, 4, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         values = new JPanel();
         values.setLayout(new GridLayoutManager(5, 3, new Insets(0, 0, 0, 0), 1, 1));
-        mainPanel.add(values, new GridConstraints(1, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, true));
+        mainPanel.add(values, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, true));
         bloodSugar = new JTextField();
         bloodSugar.setHorizontalAlignment(2);
-        bloodSugar.setText("B");
+        bloodSugar.setText("Blutzucker");
         values.add(bloodSugar, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, 10), null, 0, false));
         time = new JTextField();
+        time.setText("hh:mm");
         values.add(time, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         date = new JTextField();
-        date.setText("");
+        date.setText("tt.mm.jjjj");
         values.add(date, new GridConstraints(2, 0, 2, 3, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         final JLabel label1 = new JLabel();
         label1.setText("mg/dl");
@@ -166,20 +153,11 @@ public class Diabetic {
         buttonRight = new JButton();
         buttonRight.setText("Vor");
         buttonRight.setToolTipText("");
-        mainPanel.add(buttonRight, new GridConstraints(2, 4, 1, 1, GridConstraints.ANCHOR_EAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        mainPanel.add(output, new GridConstraints(1, 2, 1, 3, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        mainPanel.add(buttonRight, new GridConstraints(1, 3, 1, 1, GridConstraints.ANCHOR_EAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        mainPanel.add(output, new GridConstraints(0, 2, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         buttonLeft = new JButton();
         buttonLeft.setText("Zurueck");
-        mainPanel.add(buttonLeft, new GridConstraints(2, 2, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        final JLabel label3 = new JLabel();
-        label3.setText("Blutzucker");
-        mainPanel.add(label3, new GridConstraints(0, 2, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        final JLabel label4 = new JLabel();
-        label4.setText("Uhrzeit");
-        mainPanel.add(label4, new GridConstraints(0, 3, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        final JLabel label5 = new JLabel();
-        label5.setText("Datum");
-        mainPanel.add(label5, new GridConstraints(0, 4, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        mainPanel.add(buttonLeft, new GridConstraints(1, 2, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

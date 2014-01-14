@@ -245,4 +245,24 @@
     <Uhrzeit>qwfd</Uhrzeit>
     <Datum>q23</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>weub</Uhrzeit>
+    <Datum>duficb</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>111</Blutzucker>
+    <Uhrzeit>llo</Uhrzeit>
+    <Datum>ha</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>111</Blutzucker>
+    <Uhrzeit>24.11.1987</Uhrzeit>
+    <Datum>12:12</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>112</Blutzucker>
+    <Uhrzeit>24.11.1987</Uhrzeit>
+    <Datum>12:12</Datum>
+  </BZeintrag>
 </BZ>
