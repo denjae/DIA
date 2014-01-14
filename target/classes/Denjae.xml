@@ -220,4 +220,29 @@
     <Uhrzeit>testNode</Uhrzeit>
     <Datum>test</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>1248</Blutzucker>
+    <Uhrzeit>egrj</Uhrzeit>
+    <Datum>ewfb</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>12</Blutzucker>
+    <Uhrzeit>wef</Uhrzeit>
+    <Datum>wer</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>12</Blutzucker>
+    <Uhrzeit>wef</Uhrzeit>
+    <Datum>wer</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>13</Blutzucker>
+    <Uhrzeit>wrginvo</Uhrzeit>
+    <Datum>wefou</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>qwfd</Uhrzeit>
+    <Datum>q23</Datum>
+  </BZeintrag>
 </BZ>

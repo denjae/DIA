@@ -35,12 +35,14 @@ public class Login {
             @Override
             public void actionPerformed(ActionEvent e) {
                 name = username.getText();
+                //Es wird die Auswahl aus der Dropdown-Liste verarbeitet die dementsprechenden Schritte eingeleitet
                 choice = choiceUser.getSelectedIndex();
 
                 if (choice == 0) {
                     Diabetic diabetic = new Diabetic(name);
                     diabetic.run();
                     frame.dispose();
+
 
                 }
                 /*else
