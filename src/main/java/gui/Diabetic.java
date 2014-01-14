@@ -4,9 +4,11 @@ import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import diaPublisher.DiabeticService;
+import org.jdom2.JDOMException;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smackx.pubsub.LeafNode;
 import org.jivesoftware.smackx.pubsub.PubSubManager;
+import server.XmlService;
 import server.Xmpp;
 
 import javax.swing.*;
@@ -14,6 +16,7 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 /**
  * Created by denjae on 02.01.14.
@@ -45,7 +48,8 @@ public class Diabetic {
             PubSubManager mgr = xmpp.getMgr();
             LeafNode node;
 
-           //ActionListener, der bei Druck auf Senden-Button aktiv wird
+
+            //ActionListener, der bei Druck auf Senden-Button aktiv wird
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -70,14 +74,9 @@ public class Diabetic {
                 } catch (Exception ecx) {
                     JOptionPane.showMessageDialog(null, "Fehler bei der Eintragung");
                 }
+                fillJpanel();
 
-                //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
-
-
-
-
-
-
+                xmpp.disconnect();
 
                 //Senden an XMPP-Server - Im Prototypen nicht notwendig
               /*  try {
@@ -101,10 +100,29 @@ public class Diabetic {
                 } catch (XMPPException e1) {
                     e1.printStackTrace();
                 }*/
-                xmpp.disconnect();
 
             }
         });
+    }
+
+    //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
+    public void fillJpanel() {
+         XmlService xmlService = new XmlService();
+
+        //Setzt den Titel der Tabelle
+        String[] title = new String[]{
+                "Blutzucker", "Uhrzeit", "Datum"
+        };
+        try {
+            xmlService.getAverage("Denjae");
+        } catch (JDOMException e1) {
+            e1.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        String values[][] = xmlService.outputXml();
+
+        output = new JTable(values, title);
     }
 
     //Setzt den Benutzernamen, der im Loginfenster eingegeben wurde
@@ -126,6 +144,7 @@ public class Diabetic {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        fillJpanel();
     }
 
 

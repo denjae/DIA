@@ -85,7 +85,7 @@ public class XmlService {
     }
 
     //Funktion zum Ausgeben der Werte im JTable
-    public void outputXml() {
+    public String[][] outputXml() {
         File xmlFile = new File("./src/main/resources//returnBz.xml");
         SAXBuilder builder = new SAXBuilder();
         Document document = new Document();
@@ -99,22 +99,20 @@ public class XmlService {
         Element rootNode = document.getRootElement();
         List list = rootNode.getChildren("BZeintrag");
 
-        //Setzt den Titel der Tabelle
-        String[] title = new String[]{
-                "Blutzucker", "Uhrzeit", "Datum"
-        };
 
         String[][] values = new String[][]{
-        for (int i = 0; i < list.size(); i++) {
-            {
-                rootNode.getChild("BZeintrag").getChild("Blutzucker"),
+       /* for (int i = 0; i < list.size(); i++) {
+
+            {rootNode.getChild("BZeintrag").getChild("Blutzucker"),
                         rootNode.getChild("BZeintrag").getChild("Uhrzeit"),
-                        rootNode.getChild("BZeintrag").getChild("Datum")
-            }
+                        rootNode.getChild("BZeintrag").getChild("Datum")  }
+            }*/
+                {"1","2","3","4"}
 
 
-        }
-        }
 
+        };
+
+       return values;
     }
 }

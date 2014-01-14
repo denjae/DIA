@@ -5,12 +5,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DIA.iml" afterPath="$PROJECT_DIR$/DIA.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/returnBz.xml" afterPath="$PROJECT_DIR$/src/main/resources/returnBz.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="16" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1965">
+            <state line="43" column="0" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.8562368" vertical-offset="0" max-vertical-offset="2205">
               <folding>
                 <element signature="initializer##0;class#Diabetic#0" expanded="true" />
                 <element signature="initializer##0;class#Diabetic#0" expanded="true" />
@@ -117,7 +115,7 @@
       <file leaf-file-name="Xmpp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="12" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="1785">
+            <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="1620">
               <folding />
             </state>
           </provider>
@@ -126,17 +124,20 @@
       <file leaf-file-name="XmlServiceTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420">
+            <state line="21" column="4" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XmlService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="72" selection-start="3776" selection-end="3776" vertical-scroll-proportion="0.83208954" vertical-offset="816" max-vertical-offset="1695">
-              <folding />
+            <state line="109" column="30" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="810">
+              <folding>
+                <element signature="method#createFile#0;class#XmlService#0" expanded="false" />
+                <element signature="method#getAverage#0;class#XmlService#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +154,7 @@
       <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="103" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1395">
+            <state line="40" column="0" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -186,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/returnBz.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
         <option value="$PROJECT_DIR$/src/main/java/server/PubSub.java" />
@@ -197,9 +197,10 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
         <option value="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
         <option value="$PROJECT_DIR$/src/test/java/XmppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       </list>
     </option>
   </component>
@@ -253,8 +254,28 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="841" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>UI Form Problems</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>BoundFieldAssignment</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -313,6 +334,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,7 +542,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../EmbeddedDIA" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
@@ -780,8 +809,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Login" />
-        <item index="1" class="java.lang.String" itemvalue="Application.XmppTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.XmlServiceTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.XmlServiceTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.XmppTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.DiabeticServiceTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.XmlService" />
       </list>
@@ -851,7 +880,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="841" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -864,18 +893,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3180723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977304" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35019454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31909212" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919892" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -952,7 +981,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="511" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420" />
+        <state line="16" column="12" selection-start="511" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
@@ -971,7 +1002,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="511" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420" />
+        <state line="16" column="12" selection-start="511" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
@@ -990,7 +1023,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="112" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="360" />
+        <state line="18" column="112" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="360">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
@@ -1010,7 +1045,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="47" selection-start="1237" selection-end="1623" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1080">
-          <folding />
+          <folding>
+            <element signature="method#createFile#0;class#XmlService#0" expanded="false" />
+            <element signature="method#getAverage#0;class#XmlService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,7 +1069,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="47" selection-start="1237" selection-end="1623" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1080">
-          <folding />
+          <folding>
+            <element signature="method#createFile#0;class#XmlService#0" expanded="false" />
+            <element signature="method#getAverage#0;class#XmlService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,7 +1114,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="99" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="465">
-          <folding />
+          <folding>
+            <element signature="method#createFile#0;class#XmlService#0" expanded="false" />
+            <element signature="method#getAverage#0;class#XmlService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1115,7 +1159,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="99" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="465">
-          <folding />
+          <folding>
+            <element signature="method#createFile#0;class#XmlService#0" expanded="false" />
+            <element signature="method#getAverage#0;class#XmlService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1152,7 +1199,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="415" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
+        <state line="17" column="27" selection-start="415" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/igniterealtime/smack/smackx/3.2.1/smackx-3.2.1.jar!/org/jivesoftware/smackx/pubsub/packet/SyncPacketSend.class">
@@ -1215,26 +1264,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/XmppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.18723994" vertical-offset="0" max-vertical-offset="721" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="12" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.0" vertical-offset="1291" max-vertical-offset="1755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="103" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="855">
+        <state line="10" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.18723994" vertical-offset="0" max-vertical-offset="721">
           <folding />
         </state>
       </provider>
@@ -1246,9 +1276,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="10" selection-start="5151" selection-end="5156" vertical-scroll-proportion="0.0" vertical-offset="2631" max-vertical-offset="3435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="4" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="30" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="810">
+          <folding>
+            <element signature="method#createFile#0;class#XmlService#0" expanded="false" />
+            <element signature="method#getAverage#0;class#XmlService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="16" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1965">
+        <state line="43" column="0" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.8562368" vertical-offset="0" max-vertical-offset="2205">
           <folding>
             <element signature="initializer##0;class#Diabetic#0" expanded="true" />
             <element signature="initializer##0;class#Diabetic#0" expanded="true" />
@@ -1257,20 +1325,6 @@
             <element signature="docComment;method#$$$getRootComponent$$$#0;class#Diabetic#0" expanded="false" />
             <element signature="method#$$$getRootComponent$$$#0;class#Diabetic#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="10" selection-start="5151" selection-end="5156" vertical-scroll-proportion="0.0" vertical-offset="2631" max-vertical-offset="3435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="72" selection-start="3776" selection-end="3776" vertical-scroll-proportion="0.83208954" vertical-offset="816" max-vertical-offset="1695">
-          <folding />
         </state>
       </provider>
     </entry>

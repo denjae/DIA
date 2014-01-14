@@ -10,13 +10,14 @@ public class XmlServiceTest {
 
     public static void main(String[] args) throws JDOMException, IOException {
 
-    XmlService test = new XmlService();
+        XmlService test;
+        test = new XmlService();
       /*  try {
             test.createFile("Denjae");
         } catch (Exception e) {
             e.printStackTrace();
         }
 */
-        System.out.println(test.getAverage("Denjae"));
+        //System.out.println(test.getAverage("Denjae"));
     }
 }

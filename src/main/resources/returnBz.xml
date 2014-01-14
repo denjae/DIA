@@ -15,4 +15,39 @@
     <Uhrzeit>12:12</Uhrzeit>
     <Datum>12.12.2012</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>1233</Blutzucker>
+    <Uhrzeit>324e</Uhrzeit>
+    <Datum>123e</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>12</Uhrzeit>
+    <Datum>123</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>^23</Uhrzeit>
+    <Datum>123</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>243</Blutzucker>
+    <Uhrzeit>fweuh</Uhrzeit>
+    <Datum>dwvui</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>11.01.2014</Uhrzeit>
+    <Datum>17:45</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>11.01.2014</Uhrzeit>
+    <Datum>17:45</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>123</Blutzucker>
+    <Uhrzeit>testNode</Uhrzeit>
+    <Datum>test</Datum>
+  </BZeintrag>
 </BZ>
