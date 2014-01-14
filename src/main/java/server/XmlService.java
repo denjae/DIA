@@ -19,6 +19,7 @@ import java.util.List;
  */
 public class XmlService {
 
+
     //erstellt neues File wenn ein neuer User angelegt wird
     public void createFile(String user) {
         try {
@@ -45,6 +46,7 @@ public class XmlService {
 
 
     }
+
     //Berechnet den Durchschnitt der letzten 20 eingetragenen BZ-Werte
     public int getAverage(String user) throws JDOMException, IOException {
         //Definition des Tolleranzbereiches
@@ -77,8 +79,42 @@ public class XmlService {
             e.printStackTrace();
         }
 
-        if(average > maxBz || average < minBz)
-            JOptionPane.showMessageDialog(null, "Blutzucker von "+user+ " ausserhalb der Tolleranz - Kontrolle notwendig");
+        if (average > maxBz || average < minBz)
+            JOptionPane.showMessageDialog(null, "Blutzucker von " + user + " ausserhalb der Tolleranz - Kontrolle notwendig");
         return average;
+    }
+
+    //Funktion zum Ausgeben der Werte im JTable
+    public void outputXml() {
+        File xmlFile = new File("./src/main/resources//returnBz.xml");
+        SAXBuilder builder = new SAXBuilder();
+        Document document = new Document();
+        try {
+            document = (Document) builder.build(xmlFile);
+        } catch (JDOMException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Element rootNode = document.getRootElement();
+        List list = rootNode.getChildren("BZeintrag");
+
+        //Setzt den Titel der Tabelle
+        String[] title = new String[]{
+                "Blutzucker", "Uhrzeit", "Datum"
+        };
+
+        String[][] values = new String[][]{
+        for (int i = 0; i < list.size(); i++) {
+            {
+                rootNode.getChild("BZeintrag").getChild("Blutzucker"),
+                        rootNode.getChild("BZeintrag").getChild("Uhrzeit"),
+                        rootNode.getChild("BZeintrag").getChild("Datum")
+            }
+
+
+        }
+        }
+
     }
 }

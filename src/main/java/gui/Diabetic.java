@@ -71,7 +71,15 @@ public class Diabetic {
                     JOptionPane.showMessageDialog(null, "Fehler bei der Eintragung");
                 }
 
-                //Senden an XMPP-Server im Prototypen nicht notwendig
+                //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
+
+
+
+
+
+
+
+                //Senden an XMPP-Server - Im Prototypen nicht notwendig
               /*  try {
                     mgr.getNode(user);
                 } catch (Exception exc) {

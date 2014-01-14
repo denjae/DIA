@@ -26,6 +26,7 @@ public class DiabeticService {
         lastEntries.getRootElement().addContent(bzEntry);
     }
 
+    //Schreibt in die Datei returnBz.xml die maximal 20 letzten Werte
     public void getBZ(String user) throws JDOMException, IOException {
         SAXBuilder builder = new SAXBuilder();
         File xmlFile = new File("./src/main/resources/" + user + ".xml");
