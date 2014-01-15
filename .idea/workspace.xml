@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pfeil_links.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pfeil_rechts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pfeile_EIS.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pfeile_EIS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/left.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/server/JTableDemo.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Denjae.xml" afterPath="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -96,9 +88,10 @@
       <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="16" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.70652175" vertical-offset="440" max-vertical-offset="2070">
+            <state line="95" column="8" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.2572707" vertical-offset="1310" max-vertical-offset="2730">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
                 <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
               </folding>
             </state>
@@ -880,7 +873,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3484646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1260,11 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="260" column="10" selection-start="5151" selection-end="5156" vertical-scroll-proportion="0.0" vertical-offset="3650" max-vertical-offset="4110">
@@ -1272,11 +1260,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="16" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.70652175" vertical-offset="440" max-vertical-offset="2070">
+        <state line="95" column="8" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.2572707" vertical-offset="1310" max-vertical-offset="2730">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
             <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
           </folding>
         </state>

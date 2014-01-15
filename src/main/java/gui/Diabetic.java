@@ -11,6 +11,7 @@ import javax.swing.table.JTableHeader;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 /**
  * Created by denjae on 02.01.14.
@@ -25,10 +26,10 @@ public class Diabetic {
     private JButton send;
     private JButton buttonLeft;
     private JButton buttonRight;
-    private String user;
     private int bz = 0;
     private String timeInput;
     private String dateInput;
+    private File xmlFile;
 
 
     public Diabetic(final String name) {
@@ -43,14 +44,15 @@ public class Diabetic {
             //ActionListener, der bei Druck auf Senden-Button aktiv wird
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //Auslesen des BZ-Wertes
                 try {
                     bz = Integer.parseInt(bloodSugar.getText());
                 } catch (Exception exc) {
                     JOptionPane.showMessageDialog(null, "Bitte gueltigen Blutzucker-Wert eingeben!");
                 }
-                bz = Integer.parseInt(bloodSugar.getText());
+                //Auslesen der eingetragenen Uhrzeit
                 timeInput = time.getText();
+                //Auslesen des eingetragenen Datums
                 dateInput = date.getText();
                 //Speichert eingegebene Werte in user.xml, try/catch fuer Statusanzeige
 
@@ -90,18 +92,23 @@ public class Diabetic {
 
 
     //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
-    private void createUIComponents() {
+    private void createUIComponents() {/*
+
+
+
+
+
         String[] title = new String[]{
                 "1", "2", "3"
         };
         String[][] data = new String[][]{
-                {"a", "b", "c"},
+                *//*{"a", "b", "c"},
                 {"e", "f", "g"},
-                {"i", "j", "k"}
+                {"i", "j", "k"}*//*
         };
         output = new JTable(data, title);
         JTableHeader header = output.getTableHeader();
-        output.setTableHeader(header);
+        output.setTableHeader(header);*/
 
 
     }
