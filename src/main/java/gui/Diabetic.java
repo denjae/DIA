@@ -38,25 +38,15 @@ public class Diabetic {
     private Document doc;
     private List<Element> list;
     private int length;
-    private DiabeticService diabetic;
 
 
     public Diabetic(final String name) {
-       //Ausfuehren zum Akualisieren der Datei return.xml
-        try {
-            diabetic.getBZ(name);
-        } catch (JDOMException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        String user = name;
+
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         $$$setupUI$$$();
         send.addActionListener(new ActionListener() {
-
+            private String user = name;
             private DiabeticService dia = new DiabeticService();
-
 
 
             //ActionListener, der bei Druck auf Senden-Button aktiv wird
@@ -80,30 +70,6 @@ public class Diabetic {
                 } catch (Exception ecx) {
                     JOptionPane.showMessageDialog(null, "Fehler bei der Eintragung");
                 }
-
-                //Senden an XMPP-Server - Im Prototypen nicht notwendig
-              /*  try {
-                    mgr.getNode(user);
-                } catch (Exception exc) {
-                    try {
-                        mgr.createNode(user);
-                    } catch (XMPPException e1) {
-                        JOptionPane.showMessageDialog(null, "Fehler beim Senden der Werte!");
-                    }
-                }
-                try {
-                    node = (LeafNode) mgr.getNode(user);
-                } catch (XMPPException e1) {
-                    e1.printStackTrace();
-                }
-
-                try {
-                    xmpp.sendBZ(user, bz, timeInput, dateInput);
-                    JOptionPane.showMessageDialog(null, "Blutzucker erfolgreich eingetragen!");
-                } catch (XMPPException e1) {
-                    e1.printStackTrace();
-                }*/
-
             }
         });
     }
@@ -111,19 +77,6 @@ public class Diabetic {
 
     //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
     private void createUIComponents() {
-
-        String[][] values = setOutput();
-
-
-        String[] title = new String[]{
-                "Blutzucker", "Uhrzeit", "Datum"
-        };
-        output = new JTable(values, title);
-        JTableHeader header = output.getTableHeader();
-        output.setTableHeader(header);
-    }
-
-    private String[][] setOutput() {
         SAXBuilder b = new SAXBuilder();
         try {
             doc = b.build(new File("./src/main/resources//returnBz.xml"));
@@ -150,7 +103,13 @@ public class Diabetic {
             values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
             values[i][2] = list.get(i).getChildText("Datum").toString();
         }
-        return values;
+
+        String[] title = new String[]{
+                "Blutzucker", "Uhrzeit", "Datum"
+        };
+        output = new JTable(values, title);
+        JTableHeader header = output.getTableHeader();
+        output.setTableHeader(header);
     }
 
     public void run() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BZ>
-  <!--  <BZeintrag>
+  <BZeintrag>
     <Blutzucker>111</Blutzucker>
     <Uhrzeit>11:11</Uhrzeit>
     <Datum>11.11.2011</Datum>
@@ -169,7 +169,7 @@
     <Blutzucker>33</Blutzucker>
     <Uhrzeit>11:11</Uhrzeit>
     <Datum>11.11.2011</Datum>
-  </BZeintrag>-->
+  </BZeintrag>
   <BZeintrag>
     <Blutzucker>444</Blutzucker>
     <Uhrzeit>11:11</Uhrzeit>
