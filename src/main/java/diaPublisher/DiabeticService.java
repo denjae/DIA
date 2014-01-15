@@ -6,6 +6,7 @@ import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
+import server.XmlService;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -16,6 +17,24 @@ import java.util.List;
  * Created by denjae on 09.12.13.
  */
 public class DiabeticService {
+    private String user;
+    private File xmlFile;
+    private XmlService xmlService;
+
+    public DiabeticService(String name) {
+
+        this.user = name;
+       //Entweder bestehende XML-File auswaehlen oder neue erstellen
+        try {
+            xmlFile = new File("./src/main/resources/" + user + ".xml");
+        }
+        catch (Exception exp){
+            xmlService = new XmlService();
+            xmlService.createFile(user);
+            xmlFile = new File("./src/main/resources/" + user + ".xml");
+        }
+
+    }
 
     private void createElement(Document lastEntries, List list, int i) {
         Element bzEntry = new Element("BZeintrag");
@@ -29,7 +48,7 @@ public class DiabeticService {
     //Schreibt in die Datei returnBz.xml die maximal 20 letzten Werte
     public void getBZ(String user) throws JDOMException, IOException {
         SAXBuilder builder = new SAXBuilder();
-        File xmlFile = new File("./src/main/resources/" + user + ".xml");
+
 
         try {
             Document document = (Document) builder.build(xmlFile);

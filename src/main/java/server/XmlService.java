@@ -53,7 +53,7 @@ public class XmlService {
         int maxBz = 160;
         int minBz = 70;
         int average = 0;
-        DiabeticService service = new DiabeticService();
+        DiabeticService service = new DiabeticService(user);
         service.getBZ(user);
 
         //Erstellt XML mit den letzten 20 BZ-Werten
