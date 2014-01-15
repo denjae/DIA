@@ -17,6 +17,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by denjae on 02.01.14.
@@ -35,6 +36,8 @@ public class Diabetic {
     private String timeInput;
     private String dateInput;
     private Document doc;
+    private List<Element> list;
+    private int length;
 
 
     public Diabetic(final String name) {
@@ -106,16 +109,32 @@ public class Diabetic {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        //Anzahl der Werte auf max 20 begrenzen
         Element root = (Element) doc.getRootElement();
+        list = root.getChildren("BZeintrag");
+
+        if (list.size() <= 20)
+            length = list.size();
+        else
+            length = 20;
 
         //Liest die Werte aus der XML in das Array ein
-        String[][] values = {{
+        String[][] values = new String[20][3];
+
+        for (int i = 0; i < list.size(); i++) {
+            values[i][0] =
+            values[i][1] =
+            values[i][2] =
+        }
+
+
+
+        /*{{
                 root.getChild("BZeintrag").getChild("Blutzucker").getText(),
                 root.getChild("BZeintrag").getChild("Uhrzeit").getText(),
                 root.getChild("BZeintrag").getChild("Datum").getText()
-        },};
-
-
+        },};*/
 
 
         String[] title = new String[]{

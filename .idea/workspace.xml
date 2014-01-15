@@ -6,7 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,10 +88,19 @@
       <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="7" selection-start="3773" selection-end="3773" vertical-scroll-proportion="0.32826087" vertical-offset="1499" max-vertical-offset="2160">
+            <state line="127" column="23" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.7717391" vertical-offset="1550" max-vertical-offset="2445">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiabeticService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="28" selection-start="1569" selection-end="1924" vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="1380">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1196,13 +1205,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="69" selection-start="965" selection-end="965" vertical-scroll-proportion="-1.4130435" vertical-offset="920" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.35869566" vertical-offset="0" max-vertical-offset="460">
@@ -1238,9 +1240,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="28" selection-start="1569" selection-end="1924" vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="7" selection-start="3773" selection-end="3773" vertical-scroll-proportion="0.32826087" vertical-offset="1499" max-vertical-offset="2160">
+        <state line="127" column="23" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.7717391" vertical-offset="1550" max-vertical-offset="2445">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
