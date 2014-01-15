@@ -84,35 +84,4 @@ public class XmlService {
         return average;
     }
 
-    //Funktion zum Ausgeben der Werte im JTable
-    public String[][] outputXml() {
-        File xmlFile = new File("./src/main/resources//returnBz.xml");
-        SAXBuilder builder = new SAXBuilder();
-        Document document = new Document();
-        try {
-            document = (Document) builder.build(xmlFile);
-        } catch (JDOMException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Element rootNode = document.getRootElement();
-        List list = rootNode.getChildren("BZeintrag");
-
-
-        String[][] values = new String[][]{
-       /* for (int i = 0; i < list.size(); i++) {
-
-            {rootNode.getChild("BZeintrag").getChild("Blutzucker"),
-                        rootNode.getChild("BZeintrag").getChild("Uhrzeit"),
-                        rootNode.getChild("BZeintrag").getChild("Datum")  }
-            }*/
-                {"1","2","3","4"}
-
-
-
-        };
-
-       return values;
-    }
 }

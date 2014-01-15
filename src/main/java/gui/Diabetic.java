@@ -4,6 +4,10 @@ import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import diaPublisher.DiabeticService;
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.JDOMException;
+import org.jdom2.input.SAXBuilder;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -12,6 +16,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by denjae on 02.01.14.
@@ -29,7 +34,7 @@ public class Diabetic {
     private int bz = 0;
     private String timeInput;
     private String dateInput;
-    private File xmlFile;
+    private Document doc;
 
 
     public Diabetic(final String name) {
@@ -92,25 +97,33 @@ public class Diabetic {
 
 
     //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
-    private void createUIComponents() {/*
+    private void createUIComponents() {
+        SAXBuilder b = new SAXBuilder();
+        try {
+            doc = b.build(new File("./src/main/resources//returnBz.xml"));
+        } catch (JDOMException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Element root = (Element) doc.getRootElement();
 
+        //Liest die Werte aus der XML in das Array ein
+        String[][] values = {{
+                root.getChild("BZeintrag").getChild("Blutzucker").getText(),
+                root.getChild("BZeintrag").getChild("Uhrzeit").getText(),
+                root.getChild("BZeintrag").getChild("Datum").getText()
+        },};
 
 
 
 
         String[] title = new String[]{
-                "1", "2", "3"
+                "Blutzucker", "Uhrzeit", "Datum"
         };
-        String[][] data = new String[][]{
-                *//*{"a", "b", "c"},
-                {"e", "f", "g"},
-                {"i", "j", "k"}*//*
-        };
-        output = new JTable(data, title);
+        output = new JTable(values, title);
         JTableHeader header = output.getTableHeader();
-        output.setTableHeader(header);*/
-
-
+        output.setTableHeader(header);
     }
 
     public void run() {

@@ -6,7 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
     </list>
     <ignored path="DIA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,45 +88,18 @@
       <file leaf-file-name="Diabetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="8" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.2572707" vertical-offset="1310" max-vertical-offset="2730">
+            <state line="110" column="7" selection-start="3773" selection-end="3773" vertical-scroll-proportion="0.32826087" vertical-offset="1499" max-vertical-offset="2160">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
-                <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Diabetic.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Denjae.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="260" column="10" selection-start="5151" selection-end="5156" vertical-scroll-proportion="0.0" vertical-offset="3650" max-vertical-offset="4110">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="885">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="30" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="1860">
+            <state line="262" column="12" selection-start="6222" selection-end="6231" vertical-scroll-proportion="0.0" vertical-offset="3620" max-vertical-offset="4110">
               <folding />
             </state>
           </provider>
@@ -168,11 +141,11 @@
         <option value="$PROJECT_DIR$/src/test/java/XmppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
         <option value="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/main/resources/returnBz.xml" />
         <option value="$PROJECT_DIR$/src/main/java/server/JTableDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
+        <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       </list>
     </option>
@@ -1190,13 +1163,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.22821577" vertical-offset="0" max-vertical-offset="723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="116" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="1815">
@@ -1211,30 +1177,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="69" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="1620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="4" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="30" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
@@ -1246,32 +1191,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="69" selection-start="965" selection-end="965" vertical-scroll-proportion="-1.4130435" vertical-offset="920" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.35869566" vertical-offset="0" max-vertical-offset="460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="426" max-vertical-offset="885">
+        <state line="44" column="0" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="-1.9530201" vertical-offset="1173" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="68" selection-start="1799" selection-end="1835" vertical-scroll-proportion="0.47826087" vertical-offset="485" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="10" selection-start="5151" selection-end="5156" vertical-scroll-proportion="0.0" vertical-offset="3650" max-vertical-offset="4110">
+        <state line="262" column="12" selection-start="6222" selection-end="6231" vertical-scroll-proportion="0.0" vertical-offset="3650" max-vertical-offset="4110">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="8" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.2572707" vertical-offset="1310" max-vertical-offset="2730">
+        <state line="110" column="7" selection-start="3773" selection-end="3773" vertical-scroll-proportion="0.32826087" vertical-offset="1499" max-vertical-offset="2160">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
-            <element signature="method#$$$setupUI$$$#0;class#Diabetic#0" expanded="true" />
           </folding>
         </state>
       </provider>
