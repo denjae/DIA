@@ -87,6 +87,7 @@ public class Diabetic {
         String[] title = new String[]{
                 "Blutzucker", "Uhrzeit", "Datum"
         };
+
         output = new JTable(values, title);
         JTableHeader header = output.getTableHeader();
         output.setTableHeader(header);
@@ -94,6 +95,7 @@ public class Diabetic {
 
     private String[][] fillJPanel() {
         SAXBuilder b = new SAXBuilder();
+        int j;
 
         try {
             doc = b.build(xmlFile);
@@ -110,18 +112,23 @@ public class Diabetic {
         String[][] values = new String[20][3];
 
 
-        if (list.size() <= 20)
+        //Variable j dient zum Vertauschen der Werte, somit werden die aktuellsten Werte oben statt unten ausgegeben
+        if (list.size() <= 20) {
+            j = list.size();
             for (int i = 0; i < list.size(); i++) {
-                values[i][0] = list.get(i).getChildText("Blutzucker").toString();
-                values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
-                values[i][2] = list.get(i).getChildText("Datum").toString();
+                values[j][0] = list.get(i).getChildText("Blutzucker").toString();
+                values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
+                values[j][2] = list.get(i).getChildText("Datum").toString();
+                j--;
             }
-        else
-            for (int i = 0; i < 20; i++) {
-                values[i][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
-                values[i][1] = list.get(list.size() - 20 + i).getChildText("Uhrzeit").toString();
-                values[i][2] = list.get(list.size() - 20 + i).getChildText("Datum").toString();
-            }
+        } else
+            j = 19;
+        for (int i = 0; i < 20; i++) {
+            values[j][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
+            values[j][1] = list.get(list.size() - 20 + i).getChildText("Uhrzeit").toString();
+            values[j][2] = list.get(list.size() - 20 + i).getChildText("Datum").toString();
+            j--;
+        }
         return values;
     }
 
