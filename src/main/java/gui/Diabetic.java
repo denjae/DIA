@@ -8,6 +8,7 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
+import server.XmlService;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -38,6 +39,7 @@ public class Diabetic {
     private Document doc;
     private List<Element> list;
     private int length;
+    private XmlService xmlService;
 
 
     public Diabetic(final String name) {
@@ -62,12 +64,13 @@ public class Diabetic {
                 timeInput = time.getText();
                 //Auslesen des eingetragenen Datums
                 dateInput = date.getText();
-                //Speichert eingegebene Werte in user.xml, try/catch fuer Statusanzeige
 
+                //Speichert eingegebene Werte in user.xml, try/catch fuer Statusanzeige
                 try {
                     dia.setBZ(user, bz, timeInput, dateInput);
                     JOptionPane.showMessageDialog(null, "Blutzucker erfolgreich eingetragen!");
                 } catch (Exception ecx) {
+
                     JOptionPane.showMessageDialog(null, "Fehler bei der Eintragung");
                 }
             }
@@ -77,6 +80,17 @@ public class Diabetic {
 
     //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
     private void createUIComponents() {
+        String[][] values = fillJPanel();
+
+        String[] title = new String[]{
+                "Blutzucker", "Uhrzeit", "Datum"
+        };
+        output = new JTable(values, title);
+        JTableHeader header = output.getTableHeader();
+        output.setTableHeader(header);
+    }
+
+    private String[][] fillJPanel() {
         SAXBuilder b = new SAXBuilder();
         try {
             doc = b.build(new File("./src/main/resources//returnBz.xml"));
@@ -103,13 +117,7 @@ public class Diabetic {
             values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
             values[i][2] = list.get(i).getChildText("Datum").toString();
         }
-
-        String[] title = new String[]{
-                "Blutzucker", "Uhrzeit", "Datum"
-        };
-        output = new JTable(values, title);
-        JTableHeader header = output.getTableHeader();
-        output.setTableHeader(header);
+        return values;
     }
 
     public void run() {

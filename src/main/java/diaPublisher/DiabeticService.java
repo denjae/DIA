@@ -51,8 +51,6 @@ public class DiabeticService {
                 }
             }
 
-
-            // new XMLOutputter().output(doc, System.out);
             XMLOutputter xmlOutput = new XMLOutputter();
 
             // Ausgabe formatieren
