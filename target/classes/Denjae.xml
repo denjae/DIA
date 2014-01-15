@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BZ>
-  <BZeintrag>
+ <!-- <BZeintrag>
     <Blutzucker>111</Blutzucker>
     <Uhrzeit>11:11</Uhrzeit>
     <Datum>11.11.2011</Datum>
@@ -184,7 +184,7 @@
     <Blutzucker>111</Blutzucker>
     <Uhrzeit>12:12</Uhrzeit>
     <Datum>12.12.2012</Datum>
-  </BZeintrag>
+  </BZeintrag>-->
   <BZeintrag>
     <Blutzucker>1233</Blutzucker>
     <Uhrzeit>324e</Uhrzeit>
@@ -269,5 +269,15 @@
     <Blutzucker>213</Blutzucker>
     <Uhrzeit>01.01.2014</Uhrzeit>
     <Datum>22:22</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>0</Blutzucker>
+    <Uhrzeit>wfo</Uhrzeit>
+    <Datum>qfwub</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>111</Blutzucker>
+    <Uhrzeit>wfo</Uhrzeit>
+    <Datum>qfwub</Datum>
   </BZeintrag>
 </BZ>

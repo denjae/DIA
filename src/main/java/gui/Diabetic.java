@@ -38,7 +38,6 @@ public class Diabetic {
     private String dateInput;
     private Document doc;
     private List<Element> list;
-    private int length;
     private XmlService xmlService;
     private File xmlFile;
     private DiabeticService dia;
@@ -46,8 +45,8 @@ public class Diabetic {
 
     public Diabetic(final String name) {
 
-         final String user = name;
-          dia = new DiabeticService(user);
+        final String user = name;
+        dia = new DiabeticService(user);
         xmlFile = dia.getXmlFile();
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         $$$setupUI$$$();
@@ -107,19 +106,22 @@ public class Diabetic {
         Element root = (Element) doc.getRootElement();
         list = root.getChildren("BZeintrag");
 
-        if (list.size() <= 20)
-            length = list.size();
-        else
-            length = 20;
-
         //Liest die Werte aus der XML in das Array ein
         String[][] values = new String[20][3];
 
-        for (int i = 0; i < length; i++) {
-            values[i][0] = list.get(i).getChildText("Blutzucker").toString();
-            values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
-            values[i][2] = list.get(i).getChildText("Datum").toString();
-        }
+
+        if (list.size() <= 20)
+            for (int i = 0; i < list.size(); i++) {
+                values[i][0] = list.get(i).getChildText("Blutzucker").toString();
+                values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
+                values[i][2] = list.get(i).getChildText("Datum").toString();
+            }
+        else
+            for (int i = 0; i < 20; i++) {
+                values[i][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
+                values[i][1] = list.get(list.size() - 20 + i).getChildText("Uhrzeit").toString();
+                values[i][2] = list.get(list.size() - 20 + i).getChildText("Datum").toString();
+            }
         return values;
     }
 
