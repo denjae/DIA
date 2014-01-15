@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class DiabeticServiceTest {
     public static void main(String[] args) throws Exception {
-        DiabeticService diabeticService = new DiabeticService();
+        DiabeticService diabeticService = new DiabeticService("Denjae");
         try {
             diabeticService.getBZ("Denjae");
         } catch (Exception e) {

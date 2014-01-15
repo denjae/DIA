@@ -36,6 +36,10 @@ public class DiabeticService {
 
     }
 
+    public File getXmlFile(){
+        return xmlFile;
+    }
+
     private void createElement(Document lastEntries, List list, int i) {
         Element bzEntry = new Element("BZeintrag");
         Element node = (Element) list.get(i);

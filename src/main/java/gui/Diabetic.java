@@ -40,15 +40,18 @@ public class Diabetic {
     private List<Element> list;
     private int length;
     private XmlService xmlService;
+    private File xmlFile;
+    private DiabeticService dia;
 
 
     public Diabetic(final String name) {
 
+         final String user = name;
+          dia = new DiabeticService(user);
+        xmlFile = dia.getXmlFile();
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         $$$setupUI$$$();
         send.addActionListener(new ActionListener() {
-            private String user = name;
-            private DiabeticService dia = new DiabeticService();
 
 
             //ActionListener, der bei Druck auf Senden-Button aktiv wird
@@ -92,14 +95,14 @@ public class Diabetic {
 
     private String[][] fillJPanel() {
         SAXBuilder b = new SAXBuilder();
+
         try {
-            doc = b.build(new File("./src/main/resources//returnBz.xml"));
+            doc = b.build(xmlFile);
         } catch (JDOMException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         //Anzahl der Werte auf max 20 begrenzen
         Element root = (Element) doc.getRootElement();
         list = root.getChildren("BZeintrag");
@@ -112,7 +115,7 @@ public class Diabetic {
         //Liest die Werte aus der XML in das Array ein
         String[][] values = new String[20][3];
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < length; i++) {
             values[i][0] = list.get(i).getChildText("Blutzucker").toString();
             values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
             values[i][2] = list.get(i).getChildText("Datum").toString();

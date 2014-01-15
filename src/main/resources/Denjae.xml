@@ -270,4 +270,14 @@
     <Uhrzeit>01.01.2014</Uhrzeit>
     <Datum>22:22</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>0</Blutzucker>
+    <Uhrzeit>wfo</Uhrzeit>
+    <Datum>qfwub</Datum>
+  </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>111</Blutzucker>
+    <Uhrzeit>wfo</Uhrzeit>
+    <Datum>qfwub</Datum>
+  </BZeintrag>
 </BZ>
