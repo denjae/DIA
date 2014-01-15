@@ -38,15 +38,25 @@ public class Diabetic {
     private Document doc;
     private List<Element> list;
     private int length;
+    private DiabeticService diabetic;
 
 
     public Diabetic(final String name) {
-
+       //Ausfuehren zum Akualisieren der Datei return.xml
+        try {
+            diabetic.getBZ(name);
+        } catch (JDOMException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String user = name;
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         $$$setupUI$$$();
         send.addActionListener(new ActionListener() {
-            private String user = name;
+
             private DiabeticService dia = new DiabeticService();
+
 
 
             //ActionListener, der bei Druck auf Senden-Button aktiv wird
@@ -101,6 +111,19 @@ public class Diabetic {
 
     //Zeigt die aktuellen Werte in der JTable an bzw. ruft diese Werte auf
     private void createUIComponents() {
+
+        String[][] values = setOutput();
+
+
+        String[] title = new String[]{
+                "Blutzucker", "Uhrzeit", "Datum"
+        };
+        output = new JTable(values, title);
+        JTableHeader header = output.getTableHeader();
+        output.setTableHeader(header);
+    }
+
+    private String[][] setOutput() {
         SAXBuilder b = new SAXBuilder();
         try {
             doc = b.build(new File("./src/main/resources//returnBz.xml"));
@@ -123,26 +146,11 @@ public class Diabetic {
         String[][] values = new String[20][3];
 
         for (int i = 0; i < list.size(); i++) {
-            values[i][0] =
-            values[i][1] =
-            values[i][2] =
+            values[i][0] = list.get(i).getChildText("Blutzucker").toString();
+            values[i][1] = list.get(i).getChildText("Uhrzeit").toString();
+            values[i][2] = list.get(i).getChildText("Datum").toString();
         }
-
-
-
-        /*{{
-                root.getChild("BZeintrag").getChild("Blutzucker").getText(),
-                root.getChild("BZeintrag").getChild("Uhrzeit").getText(),
-                root.getChild("BZeintrag").getChild("Datum").getText()
-        },};*/
-
-
-        String[] title = new String[]{
-                "Blutzucker", "Uhrzeit", "Datum"
-        };
-        output = new JTable(values, title);
-        JTableHeader header = output.getTableHeader();
-        output.setTableHeader(header);
+        return values;
     }
 
     public void run() {

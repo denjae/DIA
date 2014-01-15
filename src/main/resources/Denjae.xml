@@ -265,4 +265,9 @@
     <Uhrzeit>24.11.1987</Uhrzeit>
     <Datum>12:12</Datum>
   </BZeintrag>
+  <BZeintrag>
+    <Blutzucker>213</Blutzucker>
+    <Uhrzeit>01.01.2014</Uhrzeit>
+    <Datum>22:22</Datum>
+  </BZeintrag>
 </BZ>
