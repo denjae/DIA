@@ -100,4 +100,19 @@
         <Uhrzeit>11:29</Uhrzeit>
         <Datum>15.01.2014</Datum>
     </BZeintrag>
+    <BZeintrag>
+        <Blutzucker>111</Blutzucker>
+        <Uhrzeit>11:30</Uhrzeit>
+        <Datum>15.01.2014</Datum>
+    </BZeintrag>
+    <BZeintrag>
+        <BZeintrag>
+            <Blutzucker>111</Blutzucker>
+            <Uhrzeit>11:31</Uhrzeit>
+            <Datum>15.01.2014</Datum>
+        </BZeintrag>
+        <Blutzucker>111</Blutzucker>
+        <Uhrzeit>11:32</Uhrzeit>
+        <Datum>15.01.2014</Datum>
+    </BZeintrag>
 </BZ>

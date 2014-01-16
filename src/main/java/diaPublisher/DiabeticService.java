@@ -24,7 +24,7 @@ public class DiabeticService {
     public DiabeticService(String name) {
 
         this.user = name;
-       //Entweder bestehende XML-File auswaehlen oder neue erstellen
+        //Entweder bestehende XML-File auswaehlen oder neue erstellen
         try {
             xmlFile = new File("./src/main/resources/" + user + ".xml");
         }
