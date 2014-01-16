@@ -96,7 +96,7 @@ public class Doctor {
     }
 
     public void run() {
-        JFrame frame = new JFrame("Diabetic");
+        JFrame frame = new JFrame("Doctor");
         frame.setContentPane(this.mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
