@@ -26,12 +26,12 @@ public class DiabeticService {
         this.user = name;
        //Entweder bestehende XML-File auswaehlen oder neue erstellen
         try {
-            xmlFile = new File("./src/main/resources/" + user + ".xml");
+            xmlFile = new File("../src/main/resources/" + user + ".xml");
         }
         catch (Exception exp){
             xmlService = new XmlService();
             xmlService.createFile(user);
-            xmlFile = new File("./src/main/resources/" + user + ".xml");
+            xmlFile = new File("../src/main/resources/" + user + ".xml");
         }
 
     }
@@ -78,7 +78,7 @@ public class DiabeticService {
 
             // Ausgabe formatieren
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(lastEntries, new FileWriter("./src/main/resources//returnBz.xml"));
+            xmlOutput.output(lastEntries, new FileWriter("../src/main/resources//returnBz.xml"));
 
         } catch (IOException io) {
             System.out.println(io.getMessage());
@@ -90,7 +90,7 @@ public class DiabeticService {
 
     public void setBZ(String user, Integer bz, String date, String time) {
         SAXBuilder builder = new SAXBuilder();
-        File xmlFile = new File("./src/main/resources/" + user + ".xml");
+        File xmlFile = new File("../src/main/resources/" + user + ".xml");
         try {
             Document document = (Document) builder.build(xmlFile);
             Element rootElement = document.getRootElement();
@@ -104,7 +104,7 @@ public class DiabeticService {
 
             // Formatierung verbessern
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(document, new FileWriter("./src/main/resources/" + user + ".xml"));
+            xmlOutput.output(document, new FileWriter("../src/main/resources/" + user + ".xml"));
 
 
         } catch (JDOMException e) {
