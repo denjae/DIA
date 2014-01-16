@@ -8,6 +8,7 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URISyntaxException;
 
 /**
  * Created by denjae on 06.01.14.
@@ -46,7 +47,12 @@ public class Login {
 
                 }
                 else {
-                    Doctor doctor = new Doctor(name);
+                    Doctor doctor = null;
+                    try {
+                        doctor = new Doctor(name);
+                    } catch (URISyntaxException e1) {
+                        e1.printStackTrace();
+                    }
                     doctor.run();
                     frame.dispose();
                 }

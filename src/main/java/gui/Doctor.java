@@ -8,7 +8,7 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
-import server.XmlService;
+
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -18,6 +18,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 /**
@@ -30,9 +31,6 @@ public class Doctor {
     private JButton buttonRight;
     private JTextArea note;
     private JButton send;
-    private int bz = 0;
-    private String timeInput;
-    private String dateInput;
     private Document doc;
     private List<Element> list;
     private File xmlFile;
@@ -40,7 +38,7 @@ public class Doctor {
     private String user;
 
 
-    public Doctor(String name) {
+    public Doctor(String name) throws URISyntaxException {
 
         user = name;
         dia = new DiabeticService(user);
@@ -93,15 +91,14 @@ public class Doctor {
         //Variable j dient zum Vertauschen der Werte, somit werden die aktuellsten Werte oben statt unten ausgegeben
         if (list.size() <= 20) {
             j = list.size();
+            System.out.println(j);
             for (int i = 0; i < list.size(); i++) {
                 values[j][0] = list.get(i).getChildText("Blutzucker").toString();
                 values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
                 values[j][2] = list.get(i).getChildText("Datum").toString();
                 j--;
             }
-        }
-
-        else
+        } else
             j = 19;
         for (int i = 0; i < 20; i++) {
             values[j][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
@@ -131,18 +128,24 @@ public class Doctor {
     private void $$$setupUI$$$() {
         createUIComponents();
         mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayoutManager(2, 3, new Insets(0, 0, 0, 0), 80, 60));
+        mainPanel.setLayout(new GridLayoutManager(3, 4, new Insets(0, 0, 0, 0), 80, 60));
         mainPanel.setBorder(BorderFactory.createTitledBorder(null, "DIAbetesDIAry - Ihre Verbindung zum Arzt", TitledBorder.CENTER, TitledBorder.TOP));
         final Spacer spacer1 = new Spacer();
-        mainPanel.add(spacer1, new GridConstraints(0, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        mainPanel.add(spacer1, new GridConstraints(0, 3, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         buttonRight = new JButton();
         buttonRight.setText("Vor");
         buttonRight.setToolTipText("");
-        mainPanel.add(buttonRight, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_EAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        mainPanel.add(output, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        mainPanel.add(buttonRight, new GridConstraints(2, 2, 1, 1, GridConstraints.ANCHOR_EAST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        mainPanel.add(output, new GridConstraints(0, 1, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         buttonLeft = new JButton();
         buttonLeft.setText("Zurueck");
-        mainPanel.add(buttonLeft, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        mainPanel.add(buttonLeft, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        note = new JTextArea();
+        note.setText("Notiz eingeben...\n");
+        mainPanel.add(note, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        send = new JButton();
+        send.setText("Notiz senden");
+        mainPanel.add(send, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

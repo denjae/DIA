@@ -96,7 +96,7 @@ public class Diabetic {
 
     private String[][] fillJPanel() {
         SAXBuilder b = new SAXBuilder();
-        int j;
+        int j = 0;
 
         try {
             doc = b.build(xmlFile);
@@ -115,6 +115,8 @@ public class Diabetic {
 
         //Variable j dient zum Vertauschen der Werte, somit werden die aktuellsten Werte oben statt unten ausgegeben
         if (list.size() <= 20) {
+            System.out.println("kleiner 20");
+            System.out.println(list.size());
             j = list.size();
             for (int i = 0; i < list.size(); i++) {
                 values[j][0] = list.get(i).getChildText("Blutzucker").toString();
@@ -122,11 +124,11 @@ public class Diabetic {
                 values[j][2] = list.get(i).getChildText("Datum").toString();
                 j--;
             }
-        }
-
-        else
+        } else
             j = 19;
         for (int i = 0; i < 20; i++) {
+            System.out.println("Groesser 20");
+            System.out.println(list.size());
             values[j][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
             values[j][1] = list.get(list.size() - 20 + i).getChildText("Uhrzeit").toString();
             values[j][2] = list.get(list.size() - 20 + i).getChildText("Datum").toString();

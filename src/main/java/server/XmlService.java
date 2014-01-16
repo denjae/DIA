@@ -12,6 +12,7 @@ import javax.swing.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 /**
@@ -38,7 +39,7 @@ public class XmlService {
 
             // display nice nice
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(document, new FileWriter("./src/main/resources//resources/" + user + ".xml"));
+            xmlOutput.output(document, new FileWriter("./src/main//resources/" + user + ".xml"));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -48,7 +49,7 @@ public class XmlService {
     }
 
     //Berechnet den Durchschnitt der letzten 20 eingetragenen BZ-Werte
-    public int getAverage(String user) throws JDOMException, IOException {
+    public int getAverage(String user) throws JDOMException, IOException, URISyntaxException {
         //Definition des Tolleranzbereiches
         int maxBz = 160;
         int minBz = 70;
@@ -57,7 +58,7 @@ public class XmlService {
         service.getBZ(user);
 
         //Erstellt XML mit den letzten 20 BZ-Werten
-        File xmlFile = new File("./src/main/resources//returnBz.xml");
+        File xmlFile = new File("./src/main/resources/returnBz.xml");
         SAXBuilder builder = new SAXBuilder();
         Document document = null;
         try {
