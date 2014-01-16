@@ -29,6 +29,7 @@ public class Doctor {
     private JButton buttonLeft;
     private JButton buttonRight;
     private JTextArea note;
+    private JButton send;
     private int bz = 0;
     private String timeInput;
     private String dateInput;
@@ -47,6 +48,13 @@ public class Doctor {
         //Fuehrt die notwendigen Methoden beim Absenden der eingetragenen Werte aus
         $$$setupUI$$$();
 
+        //Oeffnet Mitteilung, dass das Absenden von Notizen im Prototypen nicht funktioniert
+        send.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Diese Funktion ist im Prototypen nicht implementiert..");
+            }
+        });
     }
 
 
