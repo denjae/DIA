@@ -45,9 +45,12 @@ public class Login {
 
 
                 }
-                /*else
-                    Doctor doctor = new Doctor();
-                    doctor.setUser(name);*/
+                else {
+                    Doctor doctor = new Doctor(name);
+                    doctor.run();
+                    frame.dispose();
+                }
+
 
 
             }
