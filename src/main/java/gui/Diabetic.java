@@ -39,7 +39,6 @@ public class Diabetic {
     private String dateInput;
     private Document doc;
     private List<Element> list;
-    private XmlService xmlService;
     private File xmlFile;
     private DiabeticService dia;
     private String user;
@@ -123,7 +122,9 @@ public class Diabetic {
                 values[j][2] = list.get(i).getChildText("Datum").toString();
                 j--;
             }
-        } else
+        }
+
+        else
             j = 19;
         for (int i = 0; i < 20; i++) {
             values[j][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
