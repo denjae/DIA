@@ -33,6 +33,7 @@ public class Diabetic {
     private JButton send;
     private JButton buttonLeft;
     private JButton buttonRight;
+    private JTextArea note;
     private int bz = 0;
     private String timeInput;
     private String dateInput;
