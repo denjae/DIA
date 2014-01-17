@@ -69,46 +69,47 @@ public class Doctor {
         output.setTableHeader(header);
     }
 
-    private String[][] fillJPanel() {
-        SAXBuilder b = new SAXBuilder();
-        int j;
 
-        try {
-            doc = b.build(xmlFile);
-        } catch (JDOMException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //Anzahl der Werte auf max 20 begrenzen
-        Element root = (Element) doc.getRootElement();
-        list = root.getChildren("BZeintrag");
-
-        //Liest die Werte aus der XML in das Array ein
-        String[][] values = new String[20][3];
 
 
         //Variable j dient zum Vertauschen der Werte, somit werden die aktuellsten Werte oben statt unten ausgegeben
-        if (list.size() <= 20) {
-            j = list.size();
-            System.out.println(j);
-            for (int i = 0; i < list.size(); i++) {
-                values[j][0] = list.get(i).getChildText("Blutzucker").toString();
-                values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
-                values[j][2] = list.get(i).getChildText("Datum").toString();
-                j--;
-            }
-        } else
-            j = 19;
-        for (int i = 0; i < 20; i++) {
-            values[j][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
-            values[j][1] = list.get(list.size() - 20 + i).getChildText("Uhrzeit").toString();
-            values[j][2] = list.get(list.size() - 20 + i).getChildText("Datum").toString();
-            j--;
-        }
-        return values;
-    }
+        private String[][] fillJPanel() {
+            SAXBuilder b = new SAXBuilder();
 
+            try {
+                doc = b.build(xmlFile);
+            } catch (JDOMException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            //Anzahl der Werte auf max 20 begrenzen
+            Element root = (Element) doc.getRootElement();
+            list = root.getChildren("BZeintrag");
+
+            //Liest die Werte aus der XML in das Array ein
+            String[][] values = new String[20][3];
+
+
+            //Variable j dient zum Vertauschen der Werte, somit werden die aktuellsten Werte oben statt unten ausgegeben
+            int size = list.size();
+            if (size <= 20) {
+                for (int i = (size - 1), j = 0; i >= 0; i--, j++) {
+                    fillValueAtPosition(values, i, j);
+                }
+            } else {
+                for (int i = size - 1, j = 0; j < 20; j++, i--) {
+                    fillValueAtPosition(values, i, j);
+                }
+            }
+            return values;
+        }
+
+    private void fillValueAtPosition(String[][] values, int i, int j) {
+        values[j][0] = list.get(i).getChildText("Blutzucker").toString();
+        values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
+        values[j][2] = list.get(i).getChildText("Datum").toString();
+    }
     public void run() {
         JFrame frame = new JFrame("Doctor");
         frame.setContentPane(this.mainPanel);
