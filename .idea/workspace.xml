@@ -99,7 +99,7 @@
       <file leaf-file-name="EXistExample.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="113" selection-start="3369" selection-end="3369" vertical-scroll-proportion="0.3986637" vertical-offset="1186" max-vertical-offset="1635">
+            <state line="91" column="113" selection-start="3369" selection-end="3369" vertical-scroll-proportion="3.0400891" vertical-offset="0" max-vertical-offset="1635">
               <folding>
                 <element signature="e#0#3637#0" expanded="true" />
               </folding>
@@ -969,7 +969,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="841" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -988,7 +988,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34579438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1388,7 +1388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="113" selection-start="3369" selection-end="3369" vertical-scroll-proportion="0.3986637" vertical-offset="1186" max-vertical-offset="1635">
+        <state line="91" column="113" selection-start="3369" selection-end="3369" vertical-scroll-proportion="3.0400891" vertical-offset="0" max-vertical-offset="1635">
           <folding>
             <element signature="e#0#3637#0" expanded="true" />
           </folding>
