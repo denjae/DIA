@@ -7,18 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/pom.xml" line="75" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/DB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" afterPath="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/Xmpp.java" afterPath="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
+    <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="Kommentare eingefuegt, Datenbank_Klassen auskommentiert">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
@@ -110,7 +99,7 @@
       <file leaf-file-name="EXistExample.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="35" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.7995546" vertical-offset="1186" max-vertical-offset="1635">
+            <state line="91" column="113" selection-start="3369" selection-end="3369" vertical-scroll-proportion="0.3986637" vertical-offset="1186" max-vertical-offset="1635">
               <folding>
                 <element signature="e#0#3637#0" expanded="true" />
               </folding>
@@ -950,7 +939,11 @@
       <created>1389956270338</created>
       <updated>1389956270338</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Kommentare eingefuegt, Datenbank_Klassen auskommentiert">
+      <created>1389968858240</created>
+      <updated>1389968858240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1047,7 +1040,10 @@
     <MESSAGE value="xml-datei und -schema entwickelt" />
     <MESSAGE value="kleinere Bugfixes" />
     <MESSAGE value="Funktionen verbessert, ActionListener zum Umschalten der Werte hinzugefuegt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funktionen verbessert, ActionListener zum Umschalten der Werte hinzugefuegt" />
+    <MESSAGE value="Kommentare eingefuegt, Datenbank_Klassen auskommentiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kommentare eingefuegt, Datenbank_Klassen auskommentiert" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1391,7 +1387,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="35" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.7995546" vertical-offset="1186" max-vertical-offset="1635">
+        <state line="91" column="113" selection-start="3369" selection-end="3369" vertical-scroll-proportion="0.3986637" vertical-offset="1186" max-vertical-offset="1635">
           <folding>
             <element signature="e#0#3637#0" expanded="true" />
           </folding>
