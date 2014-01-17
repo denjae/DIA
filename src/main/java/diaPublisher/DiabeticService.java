@@ -79,7 +79,7 @@ public class DiabeticService {
 
             // Ausgabe formatieren
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(lastEntries, new FileWriter("./data/Denjae.xml"));
+            xmlOutput.output(lastEntries, new FileWriter("./data/returnBz.xml"));
 
         } catch (IOException io) {
             System.out.println(io.getMessage());

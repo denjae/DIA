@@ -104,7 +104,7 @@ public class Doctor {
             }
             return values;
         }
-
+    //Funktion zum Fuellen der Werte in das erzeugte Array
     private void fillValueAtPosition(String[][] values, int i, int j) {
         values[j][0] = list.get(i).getChildText("Blutzucker").toString();
         values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
