@@ -42,6 +42,7 @@ public class Login {
 
             }
         });
+        //Somit kann der eingegebene Benutzername auch via Druck auf Enter-Taste abgesendet werden
         username.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -56,13 +57,13 @@ public class Login {
         name = username.getText();
         //Es wird die Auswahl aus der Dropdown-Liste verarbeitet die dementsprechenden Schritte eingeleitet
         choice = choiceUser.getSelectedIndex();
-
+        //Oeffnet GUI fuer Patient
         if (choice == 0) {
             Diabetic diabetic = new Diabetic(name);
             diabetic.run();
             frame.dispose();
 
-
+            //Oeffnet GUI fuer Diabetologe
         } else {
             Doctor doctor = null;
             try {

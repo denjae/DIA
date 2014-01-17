@@ -10,6 +10,8 @@ import server.XmlService;
  */
 public class MedicService {
 
+
+    //Arzt kann einen neuen Benutzer einfuegen, inkl. XMPP-Kommunikation und File zum Sichern
     public void createUser(String username, String password){
         XMPPConnection connection = new XMPPConnection("localhost");
         AccountManager accountManager = new AccountManager(connection);

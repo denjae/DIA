@@ -8,9 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dia-1.4-jar-with-dependencies.jar" afterPath="$PROJECT_DIR$/target/dia-1.4-jar-with-dependencies.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/DB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeil_links.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pfeile_EIS.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Doctor.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Doctor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" afterPath="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/Xmpp.java" afterPath="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
@@ -81,90 +89,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Denjae.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="25" selection-start="0" selection-end="2983" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="1935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="83" selection-start="4345" selection-end="4345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiabeticService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="89" selection-start="688" selection-end="688" vertical-scroll-proportion="-2.1776764" vertical-offset="1196" max-vertical-offset="1635">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="34" selection-start="1806" selection-end="1807" vertical-scroll-proportion="0.0" vertical-offset="562" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Diabetic.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Denjae.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Denjae.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="22" selection-start="3329" selection-end="3329" vertical-scroll-proportion="-11.0" vertical-offset="1499" max-vertical-offset="1935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="returnBz.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/returnBz.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1635">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Doctor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/Doctor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="58" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1605">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Xmpp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="8" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1785">
+            <state line="103" column="65" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
+      <file leaf-file-name="DB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="49" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1740">
+            <state line="1" column="0" selection-start="0" selection-end="3995" vertical-scroll-proportion="0.0" vertical-offset="1396" max-vertical-offset="1845">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EXistExample.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="35" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.7995546" vertical-offset="1186" max-vertical-offset="1635">
+              <folding>
+                <element signature="e#0#3637#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,13 +147,11 @@
         <option value="$PROJECT_DIR$/src/main/java/diaSubscriber/CreateUserFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/CreateUserFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/CreateXML.java" />
-        <option value="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/blutzucker.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/server/PubSub.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Tesz.form" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.form" />
-        <option value="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
         <option value="$PROJECT_DIR$/src/test/java/XmppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/XmlServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/JTableDemo.java" />
@@ -214,12 +161,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/returnBz.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
         <option value="$PROJECT_DIR$/data/Denjae.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Doctor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/Xmpp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java" />
       </list>
     </option>
   </component>
@@ -477,6 +428,10 @@
               <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Doctor" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -527,6 +482,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eXistDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DIA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DIA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eXistDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eXist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DIA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DIA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diaSubscriber" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1046,20 +1061,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="511" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="22" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="1425">
@@ -1075,9 +1076,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="34" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="465">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,9 +1097,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="34" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="465">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,9 +1146,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,9 +1188,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,11 +1225,6 @@
         <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.29568788" vertical-offset="5241" max-vertical-offset="8055" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/igniterealtime/smack/smackx/3.2.1/smackx-3.2.1.jar!/org/jivesoftware/smackx/pubsub/packet/SyncPacketSend.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="718" selection-end="719" vertical-scroll-proportion="0.36504424" vertical-offset="0" max-vertical-offset="452" />
@@ -1266,7 +1254,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/XmppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.18723994" vertical-offset="0" max-vertical-offset="721" />
+        <state line="10" column="8" selection-start="283" selection-end="283" vertical-scroll-proportion="0.18723994" vertical-offset="0" max-vertical-offset="721">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/XmlServiceTest.java">
@@ -1291,22 +1281,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="8" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/org/jdom2/ContentList.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="19" selection-start="5058" selection-end="5058" vertical-scroll-proportion="0.0" vertical-offset="1995" max-vertical-offset="2835">
@@ -1326,44 +1300,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="49" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/returnBz.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="58" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="83" selection-start="4345" selection-end="4345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="34" selection-start="1806" selection-end="1807" vertical-scroll-proportion="0.0" vertical-offset="562" max-vertical-offset="1200">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Denjae.xml">
@@ -1380,10 +1319,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/returnBz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.8051948" vertical-offset="1173" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="68" selection-end="68" vertical-scroll-proportion="0.32467532" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="93" selection-start="353" selection-end="353" vertical-scroll-proportion="0.32467532" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="89" selection-start="688" selection-end="688" vertical-scroll-proportion="-2.1776764" vertical-offset="1196" max-vertical-offset="1635">
+        <state line="91" column="44" selection-start="3067" selection-end="3067" vertical-scroll-proportion="-0.071428575" vertical-offset="1188" max-vertical-offset="1650">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="4" selection-start="3344" selection-end="3344" vertical-scroll-proportion="2.5324676" vertical-offset="0" max-vertical-offset="1995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Doctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="92" selection-start="1888" selection-end="1895" vertical-scroll-proportion="-1.1103896" vertical-offset="1128" max-vertical-offset="1605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="42" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.15584415" vertical-offset="663" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="100" selection-start="2627" selection-end="2627" vertical-scroll-proportion="2.2077923" vertical-offset="0" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="65" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="0" selection-end="3995" vertical-scroll-proportion="0.0" vertical-offset="1396" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eXistDatabase/root/eXist/EXistExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="35" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.7995546" vertical-offset="1186" max-vertical-offset="1635">
+          <folding>
+            <element signature="e#0#3637#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

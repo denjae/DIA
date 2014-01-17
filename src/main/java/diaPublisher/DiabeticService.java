@@ -25,7 +25,7 @@ public class DiabeticService {
     public DiabeticService(String name) {
 
         this.user = name;
-        //Entweder bestehende XML-File auswaehlen oder neue erstellen
+        //Entweder bestehende XML-File auswaehlen oder neue erstellen. Ist hier nicht funktional um den Prototypen realisieren zu koennen
         try {
             xmlFile = new File("./data/Denjae.xml");
         }
@@ -41,6 +41,7 @@ public class DiabeticService {
         return xmlFile;
     }
 
+    //Erzeugt ein neues Element fuer die jeweilige XML-Datei
     private void createElement(Document lastEntries, List list, int i) {
         Element bzEntry = new Element("BZeintrag");
         Element node = (Element) list.get(i);
@@ -88,7 +89,7 @@ public class DiabeticService {
         }
     }
 
-
+    //Erzeugt in der XML einen neuen Eintrag
     public void setBZ(String user, Integer bz, String date, String time) {
         SAXBuilder builder = new SAXBuilder();
         File xmlFile = new File("./data/Denjae.xml");

@@ -79,7 +79,7 @@ public class XmlService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        //Gibt Information aus, falls der Durchschnitts-BZ ausserhalb der festgelegten Grenzen liegt
         if (average > maxBz || average < minBz)
             JOptionPane.showMessageDialog(null, "Blutzucker von " + user + " ausserhalb der Tolleranz - Kontrolle notwendig");
         return average;

@@ -84,7 +84,7 @@ public class Diabetic {
             @Override
             public void mouseClicked(MouseEvent e) {
                 TableModel m = output.getModel();
-                m.setValueAt("Foo", 0, 0);
+                m.setValueAt("Naechster Wert", 0, 0);
 
             }
         });
@@ -105,6 +105,7 @@ public class Diabetic {
         output.setTableHeader(header);
     }
 
+    //Liest die Werte aus der XML in das Array ein
     private String[][] fillJPanel() {
         SAXBuilder b = new SAXBuilder();
 
@@ -116,10 +117,10 @@ public class Diabetic {
             e.printStackTrace();
         }
         //Anzahl der Werte auf max 20 begrenzen
-        Element root = (Element) doc.getRootElement();
+        Element root = doc.getRootElement();
         list = root.getChildren("BZeintrag");
 
-        //Liest die Werte aus der XML in das Array ein
+
         String[][] values = new String[20][3];
 
 
@@ -137,6 +138,7 @@ public class Diabetic {
         return values;
     }
 
+    //Schreibt die Werte fuer eine Zeile der JTable
     private void fillValueAtPosition(String[][] values, int i, int j) {
         values[j][0] = list.get(i).getChildText("Blutzucker").toString();
         values[j][1] = list.get(i).getChildText("Uhrzeit").toString();

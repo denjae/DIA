@@ -101,7 +101,7 @@ public class Xmpp {
         return items;
     }
 
-    //Uebertraegt einen neuen BZ-Wert
+    //Uebertraegt einen neuen BZ-Wert als Payload einer Nachricht
     public void sendBZ(String name, int bz, String time, String date) throws XMPPException {
         LeafNode node = (LeafNode) mgr.getNode(name);
         SimplePayload payload = new SimplePayload("BZ", null, " <BZeintrag><Blutzucker>" + bz + "</Blutzucker><Uhrzeit>" + time + "</Uhrzeit><Datum>" + date + "</Datum></BZeintrag>");
