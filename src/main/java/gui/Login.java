@@ -8,6 +8,8 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.net.URISyntaxException;
 
 /**
@@ -35,32 +37,42 @@ public class Login {
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                name = username.getText();
-                //Es wird die Auswahl aus der Dropdown-Liste verarbeitet die dementsprechenden Schritte eingeleitet
-                choice = choiceUser.getSelectedIndex();
-
-                if (choice == 0) {
-                    Diabetic diabetic = new Diabetic(name);
-                    diabetic.run();
-                    frame.dispose();
-
-
-                }
-                else {
-                    Doctor doctor = null;
-                    try {
-                        doctor = new Doctor(name);
-                    } catch (URISyntaxException e1) {
-                        e1.printStackTrace();
-                    }
-                    doctor.run();
-                    frame.dispose();
-                }
-
+                performLogin();
 
 
             }
         });
+        username.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    performLogin();
+                }
+            }
+        });
+    }
+
+    private void performLogin() {
+        name = username.getText();
+        //Es wird die Auswahl aus der Dropdown-Liste verarbeitet die dementsprechenden Schritte eingeleitet
+        choice = choiceUser.getSelectedIndex();
+
+        if (choice == 0) {
+            Diabetic diabetic = new Diabetic(name);
+            diabetic.run();
+            frame.dispose();
+
+
+        } else {
+            Doctor doctor = null;
+            try {
+                doctor = new Doctor(name);
+            } catch (URISyntaxException e1) {
+                e1.printStackTrace();
+            }
+            doctor.run();
+            frame.dispose();
+        }
     }
 
     private void createUIComponents() {

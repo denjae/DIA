@@ -8,14 +8,16 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
-import server.XmlService;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.JTableHeader;
+import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -78,6 +80,14 @@ public class Diabetic {
                 }
             }
         });
+        buttonRight.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                TableModel m = output.getModel();
+                m.setValueAt("Foo", 0, 0);
+
+            }
+        });
     }
 
 
@@ -91,12 +101,12 @@ public class Diabetic {
 
         output = new JTable(values, title);
         JTableHeader header = output.getTableHeader();
+
         output.setTableHeader(header);
     }
 
     private String[][] fillJPanel() {
         SAXBuilder b = new SAXBuilder();
-        int j;
 
         try {
             doc = b.build(xmlFile);
@@ -114,23 +124,23 @@ public class Diabetic {
 
 
         //Variable j dient zum Vertauschen der Werte, somit werden die aktuellsten Werte oben statt unten ausgegeben
-        if (list.size() <= 20) {
-            j = list.size() - 1;
-            for (int i = 0; i < list.size(); i++) {
-                values[j][0] = list.get(i).getChildText("Blutzucker").toString();
-                values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
-                values[j][2] = list.get(i).getChildText("Datum").toString();
-                j--;
+        int size = list.size();
+        if (size <= 20) {
+            for (int i = (size - 1), j = 0; i >= 0; i--, j++) {
+                fillValueAtPosition(values, i, j);
             }
-        } else
-        j = 19;
-        for (int i = 0; i < 20; i++) {
-            values[j][0] = list.get(list.size() - 20 + i).getChildText("Blutzucker").toString();
-            values[j][1] = list.get(list.size() - 20 + i).getChildText("Uhrzeit").toString();
-            values[j][2] = list.get(list.size() - 20 + i).getChildText("Datum").toString();
-            j--;
+        } else {
+            for (int i = size - 1, j = 0; j < 20; j++, i--) {
+                fillValueAtPosition(values, i, j);
+            }
         }
         return values;
+    }
+
+    private void fillValueAtPosition(String[][] values, int i, int j) {
+        values[j][0] = list.get(i).getChildText("Blutzucker").toString();
+        values[j][1] = list.get(i).getChildText("Uhrzeit").toString();
+        values[j][2] = list.get(i).getChildText("Datum").toString();
     }
 
     public void run() {
