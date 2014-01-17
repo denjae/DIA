@@ -7,6 +7,7 @@ import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
+import sun.tools.java.ClassPath;
 
 import javax.swing.*;
 import java.io.File;
@@ -38,7 +39,7 @@ public class XmlService {
 
             // display nice nice
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(document, new FileWriter("./src/main/resources//resources/" + user + ".xml"));
+            xmlOutput.output(document, new FileWriter("./data/Denjae.xml"));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -57,7 +58,7 @@ public class XmlService {
         service.getBZ(user);
 
         //Erstellt XML mit den letzten 20 BZ-Werten
-        File xmlFile = new File("./src/main/resources//returnBz.xml");
+        File xmlFile = new File("./data/Denjae.xml");
         SAXBuilder builder = new SAXBuilder();
         Document document = null;
         try {

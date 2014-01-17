@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/pom.xml" line="75" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d187e5-9118-446f-b094-9198555d6e78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Denjae.xml" afterPath="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DIA.iml" afterPath="$PROJECT_DIR$/DIA.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" afterPath="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/XmlService.java" afterPath="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DIA.iws" />
@@ -79,17 +83,39 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="23" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1785">
+            <state line="130" column="80" selection-start="4456" selection-end="4456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Denjae.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Denjae.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="18" selection-start="802" selection-end="802" vertical-scroll-proportion="1.0737528" vertical-offset="0" max-vertical-offset="1935">
-              <folding />
+            <state line="33" column="18" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1935">
+              <folding>
+                <marker date="1389902383000" expanded="true" signature="42:2981" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="177:284" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="298:405" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="419:526" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="540:647" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="661:768" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="782:888" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="902:1009" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1023:1261" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1275:1382" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1396:1503" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1517:1624" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1638:1745" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1759:1866" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="1880:1987" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="2001:2108" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="2122:2229" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="2243:2481" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="2495:2602" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="2616:2854" placeholder="..." />
+                <marker date="1389902383000" expanded="true" signature="2868:2975" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,7 +123,7 @@
       <file leaf-file-name="Diabetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="32" selection-start="3721" selection-end="3721" vertical-scroll-proportion="0.0" vertical-offset="1444" max-vertical-offset="2160">
+            <state line="132" column="8" selection-start="4435" selection-end="4435" vertical-scroll-proportion="0.0" vertical-offset="1699" max-vertical-offset="2160">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,10 +149,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiabeticService.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DiabeticService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="1" selection-start="4035" selection-end="4035" vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="1830">
+            <state line="29" column="51" selection-start="740" selection-end="740" vertical-scroll-proportion="0.21917808" vertical-offset="159" max-vertical-offset="1635">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedicService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Xmpp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="8" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1650">
+              <folding>
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="57" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.0" vertical-offset="502" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -135,7 +191,7 @@
       <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1560">
+            <state line="22" column="95" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -183,14 +239,14 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.form" />
         <option value="$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Doctor.form" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Doctor.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/main/resources/returnBz.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
         <option value="$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/XmlService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Diabetic.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Denjae.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -358,28 +414,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -403,144 +437,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doctor" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diaSubscriber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DIA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diaPublisher" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1254,20 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="-1.9530201" vertical-offset="1173" max-vertical-offset="1620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.35869566" vertical-offset="0" max-vertical-offset="460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DiabeticServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="34" selection-start="464" selection-end="472" vertical-scroll-proportion="0.29347825" vertical-offset="0" max-vertical-offset="460">
@@ -1297,13 +1179,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="23" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="25" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="2415">
@@ -1311,39 +1186,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="1" selection-start="2750" selection-end="2750" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="1" selection-start="4035" selection-end="4035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
-          <folding />
+        <state line="33" column="18" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1935">
+          <folding>
+            <marker date="1389902383000" expanded="true" signature="42:2981" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="177:284" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="298:405" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="419:526" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="540:647" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="661:768" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="782:888" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="902:1009" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1023:1261" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1275:1382" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1396:1503" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1517:1624" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1638:1745" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1759:1866" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="1880:1987" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="2001:2108" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="2122:2229" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="2243:2481" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="2495:2602" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="2616:2854" placeholder="..." />
+            <marker date="1389902383000" expanded="true" signature="2868:2975" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Diabetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="32" selection-start="3721" selection-end="3721" vertical-scroll-proportion="0.0" vertical-offset="1444" max-vertical-offset="2160">
+        <state line="132" column="8" selection-start="4435" selection-end="4435" vertical-scroll-proportion="0.0" vertical-offset="1699" max-vertical-offset="2160">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Denjae.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Xmpp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="18" selection-start="802" selection-end="802" vertical-scroll-proportion="1.0737528" vertical-offset="0" max-vertical-offset="1935">
+        <state line="35" column="8" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1650">
+          <folding>
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="95" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaSubscriber/MedicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="398" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/XmlService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="57" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.0" vertical-offset="502" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="80" selection-start="4456" selection-end="4456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/diaPublisher/DiabeticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="51" selection-start="740" selection-end="740" vertical-scroll-proportion="0.21917808" vertical-offset="159" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
